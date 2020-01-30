@@ -1,6 +1,6 @@
 # etc
 .DS_Store
-.idea/
+gradle.xml
 
 # Built application files
 *.apk
