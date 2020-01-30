@@ -1,3 +1,7 @@
+# etc
+.DS_Store
+.idea/
+
 # Built application files
 *.apk
 *.aar
