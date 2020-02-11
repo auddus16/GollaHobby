@@ -23,7 +23,7 @@ public class SmallHobbyAcitivty extends AppCompatActivity {
         setContentView(R.layout.activity_smallhobby);
 
         logoHome=findViewById(R.id.imageView2);
-        tvTitle=findViewById(R.id.textView4);
+        tvTitle=findViewById(R.id.tvSb);
         ivHobby=findViewById(R.id.imageView3);
         tvHobby=findViewById(R.id.textView5);
         btnBack=findViewById(R.id.button2);
