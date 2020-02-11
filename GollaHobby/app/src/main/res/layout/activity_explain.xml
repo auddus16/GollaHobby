@@ -2,10 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
-=======
     android:background="#3397BCE4"
->>>>>>> a8add31cfa7e3a43162b1f3b78510b285a78d343
     android:orientation="vertical">
 
     <include
