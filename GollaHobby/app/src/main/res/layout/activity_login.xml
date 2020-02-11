@@ -53,7 +53,11 @@
         android:orientation="horizontal">
 
         <TextView
+<<<<<<< HEAD
             android:id="@+id/tv_Sex"
+=======
+            android:id="@+id/tvQNum"
+>>>>>>> 46ade4cc312b314564660b2fed6cb2c5da76fc39
             android:layout_width="212dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
@@ -97,8 +101,13 @@
         android:orientation="horizontal">
 
         <TextView
+<<<<<<< HEAD
             android:id="@+id/tv_Age"
             android:layout_width="212dp"
+=======
+            android:id="@+id/tvQ"
+            android:layout_width="209dp"
+>>>>>>> 46ade4cc312b314564660b2fed6cb2c5da76fc39
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#A0CACF"
+    android:background="#3397BCE4"
     android:orientation="vertical"
     tools:context=".SmallHobbyAcitivty">
 
@@ -16,7 +16,7 @@
         app:srcCompat="@drawable/home3" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tvSb"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="45dp"
