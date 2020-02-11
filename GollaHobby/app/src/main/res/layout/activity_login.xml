@@ -43,7 +43,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/tvQNum"
             android:layout_width="212dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
@@ -87,7 +87,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/tvQ"
             android:layout_width="209dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
