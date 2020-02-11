@@ -1,11 +1,20 @@
 <resources>
 
     <!-- Base application theme. -->
+<<<<<<< Updated upstream
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+=======
+    <style name="Theme.myApp" parent="Theme.AppCompat.Light.NoActionBar">
+>>>>>>> Stashed changes
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="nextbtn" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">#B2CCFF</item>
+    <item name="colorButtonNormal">#D9E5FF</item>
     </style>
 
 </resources>
