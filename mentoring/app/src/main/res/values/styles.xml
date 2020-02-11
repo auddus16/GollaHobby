@@ -2,9 +2,13 @@
 
     <!-- Base application theme. -->
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
 =======
     <style name="Theme.myApp" parent="Theme.AppCompat.Light.NoActionBar">
+>>>>>>> Stashed changes
+=======
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">//노액션바
 >>>>>>> Stashed changes
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>

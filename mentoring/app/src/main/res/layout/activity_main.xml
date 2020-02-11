@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+<<<<<<< Updated upstream
     android:background="#3397BCE4"
     tools:context=".MainActivity" >
 
@@ -35,3 +39,13 @@
         android:theme="@style/nextbtn"></Button>
 
 </LinearLayout>
+=======
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo_blue" />
+</LinearLayout>
+>>>>>>> Stashed changes

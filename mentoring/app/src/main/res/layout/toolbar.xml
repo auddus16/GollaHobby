@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+<<<<<<< Updated upstream
     android:layout_height="match_parent"
     android:background="#4D7F8183">
+=======
+    android:layout_height="match_parent">
+>>>>>>> Stashed changes
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
+<<<<<<< Updated upstream
         android:layout_height="70dp"
         android:background="#F32C2A2A"
         android:gravity="center"
@@ -22,6 +27,20 @@
             android:baselineAlignBottom="false"
             android:scaleType="centerCrop"
             android:src="@drawable/gollahobby2" />
+=======
+        android:layout_height="?attr/actionBarSize"
+        android:background="#96DEEB"
+        android:theme="?attr/actionBarTheme">//toolbar.xml 생성
+
+        <ImageButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:baselineAlignBottom="false"
+            android:scaleType="centerCrop"
+            android:src="@drawable/toolbarlogo_white" />
+
+>>>>>>> Stashed changes
     </androidx.appcompat.widget.Toolbar>
 
 </LinearLayout>
