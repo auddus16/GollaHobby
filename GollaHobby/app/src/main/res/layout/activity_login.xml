@@ -19,8 +19,13 @@
         android:orientation="horizontal">
 
         <TextView
+<<<<<<< HEAD
             android:id="@+id/tv_Name"
             android:layout_width="212dp"
+=======
+            android:id="@+id/tvEnd2"
+            android:layout_width="13dp"
+>>>>>>> a8add31cfa7e3a43162b1f3b78510b285a78d343
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
