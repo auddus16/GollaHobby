@@ -32,13 +32,13 @@ public class QuestionActivity extends AppCompatActivity {
         logoHome=findViewById(R.id.imageView1);
         sbprogress=findViewById(R.id.seekBar2);
         tvQues=findViewById(R.id.textView1);
-        tvQNum=findViewById(R.id.textView2);
-        tvQ=findViewById(R.id.textView3);
+        tvQNum=findViewById(R.id.tv_Sex);
+        tvQ=findViewById(R.id.tv_Age);
         tvsb=findViewById(R.id.textView4);
         sb=findViewById(R.id.seekBar);
         tv0=findViewById(R.id.textView5);
         tv100=findViewById(R.id.textView6);
-        btnNext=findViewById(R.id.button);
+        btnNext=findViewById(R.id.btn_Next);
 
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
