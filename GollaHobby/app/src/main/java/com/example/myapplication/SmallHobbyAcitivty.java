@@ -11,7 +11,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class SmallHobbyAcitivty extends AppCompatActivity {
 
-    ImageView logoHome; //홈으로 이동하는 로고
     TextView tvTitle; //취미이름타이틀
     ImageView ivHobby; //해당취미사진
     TextView tvHobby; //해당취미설명
@@ -22,11 +21,10 @@ public class SmallHobbyAcitivty extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_smallhobby);
 
-        logoHome=findViewById(R.id.imageView2);
-        tvTitle=findViewById(R.id.tvSb);
-        ivHobby=findViewById(R.id.imageView3);
-        tvHobby=findViewById(R.id.textView5);
-        btnBack=findViewById(R.id.button2);
+        tvTitle=findViewById(R.id.tvTitle);
+        ivHobby=findViewById(R.id.ivHobby);
+        tvHobby=findViewById(R.id.tvHobby);
+        btnBack=findViewById(R.id.btnBack);
 
         GradientDrawable drawable=(GradientDrawable)getApplicationContext().getDrawable(R.drawable.round_background);
         tvHobby.setBackground(drawable);

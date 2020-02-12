@@ -67,7 +67,7 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/tvSb"
+        android:id="@+id/tvTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
@@ -77,7 +77,7 @@
         android:textSize="20sp" />
 
     <SeekBar
-        android:id="@+id/seekBar"
+        android:id="@+id/sb"
         style="@style/Widget.AppCompat.SeekBar"
         android:layout_width="313dp"
         android:layout_height="40dp"
@@ -96,7 +96,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/tvHobby"
             android:layout_width="26dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="145dp"
@@ -105,7 +105,7 @@
             android:text="0" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/tv100"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -115,11 +115,11 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnNext"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="300dp"
+        android:layout_marginLeft="170dp"
         android:layout_marginTop="45dp"
         android:backgroundTint="#06AA9B"
         android:text="NEXT"

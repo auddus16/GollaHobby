@@ -31,11 +31,11 @@ public class QuestionActivity extends AppCompatActivity {
         tvQues=findViewById(R.id.tvQues);
         tvQNum=findViewById(R.id.tvQNum);
         tvQ=findViewById(R.id.tvQ);
-        tvSb=findViewById(R.id.tvSb);
-        sb=findViewById(R.id.seekBar);
-        tv0=findViewById(R.id.textView5);
-        tv100=findViewById(R.id.textView6);
-        btnNext=findViewById(R.id.button);
+        tvSb=findViewById(R.id.tvTitle);
+        sb=findViewById(R.id.sb);
+        tv0=findViewById(R.id.tvHobby);
+        tv100=findViewById(R.id.tv100);
+        btnNext=findViewById(R.id.btnNext);
 
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -8,15 +8,14 @@
     android:orientation="vertical"
     tools:context=".SmallHobbyAcitivty">
 
-    <ImageView
-        android:id="@+id/imageView2"
+    <include
+        layout="@layout/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="72dp"
-        android:background="#D1000000"
-        app:srcCompat="@drawable/home3" />
+        android:layout_height="wrap_content"
+        android:background="#3397BC24" />
 
     <TextView
-        android:id="@+id/tvSb"
+        android:id="@+id/tvTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="45dp"
@@ -28,14 +27,14 @@
         android:textStyle="bold" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/ivHobby"
         android:layout_width="wrap_content"
         android:layout_height="145dp"
         android:layout_marginTop="25dp"
         app:srcCompat="@drawable/flowerarrangement" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/tvHobby"
         android:layout_width="match_parent"
         android:layout_height="159dp"
         android:layout_marginTop="20dp"
@@ -43,13 +42,12 @@
         android:textStyle="normal" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnBack"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="170dp"
         android:layout_marginTop="25dp"
-        android:layout_marginRight="300dp"
         android:backgroundTint="#06AA9B"
         android:text="Back" />
 
