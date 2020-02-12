@@ -28,19 +28,20 @@
             android:fontFamily="@font/anton"
             android:gravity="center"
             android:text="@string/황명연"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
         <ImageView
             android:id="@+id/resultGraph"
             android:layout_width="match_parent"
-            android:layout_height="243dp"
+            android:layout_height="221dp"
             android:layout_marginTop="10dp"
             app:srcCompat="@drawable/graph" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
             android:orientation="horizontal">
 
             <TextView
@@ -50,7 +51,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="@string/첫번째"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
             <TextView
                 android:id="@+id/tvYou1"
@@ -59,7 +60,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="@string/당신은"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
             <TextView
                 android:id="@+id/tvFirstReult"
@@ -68,7 +69,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="@string/OOO"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
                 android:textColor="#E65078" />
 
             <TextView
@@ -78,13 +79,12 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="@string/입니다"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
             android:gravity="center"
             android:orientation="horizontal">
 
@@ -95,7 +95,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="@string/두번째"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
             <TextView
                 android:id="@+id/tvYou2"
@@ -104,7 +104,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="@string/당신은"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
             <TextView
                 android:id="@+id/tvSecondResult"
@@ -113,7 +113,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="@string/OOO"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
                 android:textColor="#E65078" />
 
             <TextView
@@ -123,23 +123,31 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="@string/입니다"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            tools:text="@string/빨간글씨" />
 
     </LinearLayout>
 
     <Button
         android:id="@+id/btnNext"
-        android:layout_width="200dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="105dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="45dp"
         android:background="@drawable/nextbtn"
         android:fontFamily="@font/anton"
         android:gravity="center"
         android:text="@string/HOME"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:theme="@style/nextbtn"></Button>
 
 </LinearLayout>

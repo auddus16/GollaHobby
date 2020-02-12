@@ -3,9 +3,10 @@
     <string name="황명연">황명연 님</string>
     <string name="첫번째">첫번째</string>
     <string name="두번째">두번째</string>
-    <string name="입니다">입니다</string>
+    <string name="입니다">입니다.</string>
     <string name="당신은">당신은</string>
     <string name="OOO">OOO</string>
     <string name="HOME">HOME</string>
     <string name="NEXT">NEXT</string>
+    <string name="빨간글씨">취미유형을 누르면 취미종류를 알 수 있어요! </string>
 </resources>
