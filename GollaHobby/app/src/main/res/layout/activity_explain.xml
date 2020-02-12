@@ -20,13 +20,13 @@
 
     <Button
         android:id="@+id/btnNext"
-        android:layout_width="300dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="180dp"
         android:background="@drawable/nextbtn"
         android:fontFamily="@font/anton"
-        android:text="NEXT"
+        android:text="@string/NEXT"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:theme="@style/nextbtn"></Button>
 </LinearLayout>

@@ -22,11 +22,11 @@
 
         <TextView
             android:id="@+id/tvName"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
             android:layout_marginTop="5dp"
             android:fontFamily="@font/anton"
+            android:gravity="center"
             android:text="@string/황명연"
             android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
 
@@ -68,7 +68,8 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="@string/OOO"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#E65078" />
 
             <TextView
                 android:id="@+id/tvEnd1"
@@ -112,7 +113,8 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="@string/OOO"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#E65078" />
 
             <TextView
                 android:id="@+id/tvEnd2"
@@ -129,14 +131,14 @@
 
     <Button
         android:id="@+id/btnNext"
-        android:layout_width="300dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="60dp"
+        android:layout_marginStart="105dp"
         android:layout_marginTop="30dp"
         android:background="@drawable/nextbtn"
         android:fontFamily="@font/anton"
         android:gravity="center"
-        android:text="HOME"
+        android:text="@string/HOME"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:theme="@style/nextbtn"></Button>
 
