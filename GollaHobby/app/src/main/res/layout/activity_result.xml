@@ -16,6 +16,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
         android:background="#0097BCE4"
         android:gravity="center"
         android:orientation="vertical">
@@ -25,10 +26,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:fontFamily="@font/anton"
+            android:fontFamily="serif"
             android:gravity="center"
             android:text="@string/황명연"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/resultGraph"
@@ -40,7 +42,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="15dp"
             android:gravity="center"
             android:orientation="horizontal">
 
@@ -49,37 +51,46 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:fontFamily="serif"
                 android:gravity="center"
                 android:text="@string/첫번째"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tvYou1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:fontFamily="serif"
                 android:gravity="center"
-                android:text="@string/당신은"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textStyle="bold"
+                tools:text="@string/당신은" />
 
             <TextView
                 android:id="@+id/tvFirstReult"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:fontFamily="serif"
                 android:gravity="center"
                 android:text="@string/OOO"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-                android:textColor="#E65078" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#E65078"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tvEnd1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:fontFamily="serif"
                 android:gravity="center"
                 android:text="@string/입니다"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
@@ -93,37 +104,45 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:fontFamily="serif"
                 android:gravity="center"
                 android:text="@string/두번째"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tvYou2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:fontFamily="serif"
                 android:gravity="center"
                 android:text="@string/당신은"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tvSecondResult"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:fontFamily="serif"
                 android:gravity="center"
                 android:text="@string/OOO"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-                android:textColor="#E65078" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#E65078"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tvEnd2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:fontFamily="serif"
                 android:gravity="center"
                 android:text="@string/입니다"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -131,23 +150,26 @@
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="serif"
             android:gravity="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textStyle="bold"
             tools:text="@string/빨간글씨" />
 
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnNext"
-        android:layout_width="150dp"
+        android:id="@+id/btn_Next"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="130dp"
-        android:layout_marginTop="45dp"
-        android:background="@drawable/nextbtn"
-        android:fontFamily="@font/anton"
-        android:gravity="center"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_login"
         android:text="@string/HOME"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:theme="@style/nextbtn"></Button>
+        android:textColor="@color/MYWHITE"
+        android:textSize="30dp"
+        android:textStyle="bold|italic" />
 
 </LinearLayout>

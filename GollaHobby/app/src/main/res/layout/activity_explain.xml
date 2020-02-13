@@ -14,19 +14,34 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
+        android:fontFamily="serif"
         android:text="취미테스트를 시작하겠습니다.\n모든 설문에 성실히 답변해주세요!"
         android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="해당질문에 seekbar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold" />
 
     <Button
-        android:id="@+id/btnNext"
-        android:layout_width="150dp"
+        android:id="@+id/btn_Next"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="130dp"
+        android:layout_marginStart="100dp"
         android:layout_marginTop="180dp"
-        android:background="@drawable/nextbtn"
-        android:fontFamily="@font/anton"
-        android:text="@string/NEXT"
+        android:background="@drawable/button_login"
+        android:text="NEXT"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:theme="@style/nextbtn"></Button>
+        android:textColor="@color/MYWHITE"
+        android:textSize="30dp"
+        android:textStyle="bold|italic" />
+
 </LinearLayout>
