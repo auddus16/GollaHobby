@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3397BCE4"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvEnd2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="오락형"
+        android:textAlignment="center"
+        android:textSize="36sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivHorse"
+                    android:layout_width="219dp"
+                    android:layout_height="112dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/hor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvHorse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="승마"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <TextView
+                        android:id="@+id/tvHorseEx"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TextView"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivSword"
+                    android:layout_width="219dp"
+                    android:layout_height="112dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/sword" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvSword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="검도"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <TextView
+                        android:id="@+id/tvSwordEx"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TextView"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivClimb"
+                    android:layout_width="219dp"
+                    android:layout_height="112dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/cli" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvClimb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="클라이밍"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <TextView
+                        android:id="@+id/tvClimbEx"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TextView"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivDron"
+                    android:layout_width="219dp"
+                    android:layout_height="112dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/dron" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvDron"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="드론"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <TextView
+                        android:id="@+id/tvDronEx"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TextView"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
