@@ -26,9 +26,11 @@
             android:layout_marginRight="30dp"
             android:layout_weight="1"
             android:background="@drawable/textview_login"
+            android:fontFamily="serif"
             android:gravity="center"
             android:text="이름"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/et_Name"
@@ -55,9 +57,11 @@
             android:layout_marginRight="30dp"
             android:layout_weight="1"
             android:background="@drawable/textview_login"
+            android:fontFamily="serif"
             android:gravity="center"
             android:text="성별"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
 
         <RadioGroup
             android:layout_width="match_parent"
@@ -70,17 +74,21 @@
                 android:id="@+id/rb_Man"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
+                android:fontFamily="serif"
                 android:gravity="center"
                 android:text="남자"
-                android:textSize="18sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <RadioButton
                 android:id="@+id/rb_Woman"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
+                android:fontFamily="serif"
                 android:gravity="center"
                 android:text="여자"
-                android:textSize="18sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
         </RadioGroup>
 
     </LinearLayout>
@@ -99,14 +107,18 @@
             android:layout_marginRight="30dp"
             android:layout_weight="1"
             android:background="@drawable/textview_login"
+            android:fontFamily="serif"
             android:gravity="center"
             android:text="나이"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
 
         <Spinner
             android:id="@+id/spinner"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:layout_weight="1" />
     </LinearLayout>
 
