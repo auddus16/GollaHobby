@@ -84,6 +84,7 @@
         android:layout_marginLeft="50dp"
         android:layout_marginTop="20dp"
         android:backgroundTint="#00415858"
+        android:max="50"
         android:progressBackgroundTint="#387AA8"
         android:progressTint="#9E0E3CBE"
         android:thumbTint="#9E0E3CBE"
@@ -110,7 +111,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="100" />
+            android:text="50" />
 
     </LinearLayout>
 
@@ -119,10 +120,12 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="170dp"
+        android:layout_marginLeft="110dp"
         android:layout_marginTop="45dp"
-        android:backgroundTint="#06AA9B"
+        android:background="@drawable/button_login"
         android:text="NEXT"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
         android:visibility="visible" />
 
 </LinearLayout>
