@@ -64,10 +64,9 @@
                 android:layout_weight="1"
                 android:fontFamily="serif"
                 android:gravity="center"
-                android:text="TextView"
+                android:text="@string/당신은"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                android:textStyle="bold"
-                tools:text="@string/당신은" />
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tvFirstReult"
@@ -160,7 +159,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btn_Next"
+        android:id="@+id/btnNext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="95dp"

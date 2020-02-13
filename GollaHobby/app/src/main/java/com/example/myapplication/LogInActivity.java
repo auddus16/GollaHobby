@@ -46,7 +46,7 @@ public class LogInActivity extends AppCompatActivity {
         spinner = (Spinner)findViewById(R.id.spinner);
         spinner.setAdapter(arrayAdapter);
 
-        button = findViewById(R.id.btn_Next);
+        button = findViewById(R.id.btnNext);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
