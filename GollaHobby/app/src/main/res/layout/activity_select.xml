@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#3397BCE4"
@@ -16,28 +17,34 @@
         android:layout_height="match_parent">
 
         <Button
-            android:id="@+id/button8"
-            android:layout_width="238dp"
-            android:layout_height="114dp"
+            android:id="@+id/btnStartTest"
+            android:layout_width="300dp"
+            android:layout_height="140dp"
             android:layout_marginTop="132dp"
-            android:text="Test 시작"
+            android:background="@drawable/button_login"
+            android:text="Start Test"
+            android:textColor="#FFFFFF"
             android:textSize="30sp"
+            android:textStyle="bold|italic"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/button5"
-            android:layout_width="238dp"
-            android:layout_height="110dp"
+            android:id="@+id/btnHobbySearching"
+            android:layout_width="303dp"
+            android:layout_height="137dp"
             android:layout_marginTop="80dp"
-            android:text="취미 알아보기"
+            android:background="@drawable/button_login"
+            android:text="Hobby Searching"
+            android:textColor="#FFFFFF"
             android:textSize="30sp"
+            android:textStyle="bold|italic"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button8" />
+            app:layout_constraintTop_toBottomOf="@+id/btnStartTest" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

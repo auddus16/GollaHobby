@@ -18,8 +18,8 @@ public class SelectActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select);
 
-        button8 = findViewById(R.id.button8);
-        button5 = findViewById(R.id.button5);
+        button8 = findViewById(R.id.btnStartTest);
+        button5 = findViewById(R.id.btnHobbySearching);
 
         button8.setOnClickListener(new View.OnClickListener() {
             @Override

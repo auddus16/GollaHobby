@@ -11,9 +11,11 @@
         android:id="@+id/tvEnd2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="serif"
         android:text="제작형"
         android:textAlignment="center"
-        android:textSize="36sp" />
+        android:textSize="36sp"
+        android:textStyle="bold" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -47,6 +49,7 @@
                         android:id="@+id/tvFlower"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:fontFamily="serif"
                         android:text="꽃꽂이"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
@@ -54,6 +57,7 @@
                         android:id="@+id/tvFlowerEx"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:fontFamily="serif"
                         android:text="TextView"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
                 </LinearLayout>
