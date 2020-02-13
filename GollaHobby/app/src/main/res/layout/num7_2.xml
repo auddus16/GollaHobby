@@ -2,8 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3397BCE4"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/tvEnd2"
@@ -13,143 +15,121 @@
         android:textAlignment="center"
         android:textSize="36sp" />
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:id="@+id/ivHobby"
-            android:layout_width="219dp"
-            android:layout_height="112dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/cro" />
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-            <TextView
-                android:id="@+id/tvTitle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="십자수"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/tvHobby"
-                android:layout_width="match_parent"
-                android:layout_height="83dp"
-                android:text="TextView"
-                android:textSize="24sp" />
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="218dp"
-            android:layout_height="112dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/dra" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="107dp"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tvQ"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="일러스트"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/textView8"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="TextView"
-                android:textSize="24sp" />
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivPicture"
+                    android:layout_width="219dp"
+                    android:layout_height="112dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/pic" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvPicture"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="사진찍기"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <TextView
+                        android:id="@+id/tvPictureEx"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TextView"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivWall"
+                    android:layout_width="219dp"
+                    android:layout_height="112dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/wall" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvWall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="벽화 봉사"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <TextView
+                        android:id="@+id/tvWallEx"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TextView"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivDraw"
+                    android:layout_width="219dp"
+                    android:layout_height="112dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/dra" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvDraw"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="그림그리기"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <TextView
+                        android:id="@+id/tvDrawEx"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TextView"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                </LinearLayout>
+            </LinearLayout>
 
         </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="200dp"
-            android:layout_height="112dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/wall" />
-
-        <LinearLayout
-            android:layout_width="394dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/textView11"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="벽화봉사"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/tvEnd1"
-                android:layout_width="match_parent"
-                android:layout_height="62dp"
-                android:text="TextView"
-                android:textSize="24sp" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="64dp"
-            android:layout_height="112dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/pic" />
-
-        <LinearLayout
-            android:layout_width="258dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tvYou1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="사진찍기"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/textView15"
-                android:layout_width="match_parent"
-                android:layout_height="44dp"
-                android:text="TextView"
-                android:textSize="24sp" />
-        </LinearLayout>
-    </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

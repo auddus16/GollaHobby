@@ -2,8 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3397BCE4"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/tvEnd2"
@@ -13,143 +15,155 @@
         android:textAlignment="center"
         android:textSize="36sp" />
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:id="@+id/ivHobby"
-            android:layout_width="219dp"
-            android:layout_height="112dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/per" />
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-            <TextView
-                android:id="@+id/tvTitle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="꽃꽂이"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/tvHobby"
-                android:layout_width="match_parent"
-                android:layout_height="83dp"
-                android:text="TextView"
-                android:textSize="24sp" />
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="218dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/tea" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="107dp"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tvQ"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="꽃꽂이"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/textView8"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="TextView"
-                android:textSize="24sp" />
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
 
+                <ImageView
+                    android:id="@+id/ivMusical"
+                    android:layout_width="219dp"
+                    android:layout_height="112dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/mu" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvMusical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="뮤지컬 감상"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <TextView
+                        android:id="@+id/tvMusicalEx"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TextView"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivPerfume"
+                    android:layout_width="219dp"
+                    android:layout_height="112dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/per" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvPerfume"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="향수만들기"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <TextView
+                        android:id="@+id/tvPerfumeEx"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TextView"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivTea"
+                    android:layout_width="219dp"
+                    android:layout_height="112dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/tea" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvTea"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="차 체험"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <TextView
+                        android:id="@+id/tvTeaEx"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TextView"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivTravel"
+                    android:layout_width="219dp"
+                    android:layout_height="112dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/tra" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvTravel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="여행하기"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <TextView
+                        android:id="@+id/tvTravelEx"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TextView"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="198dp"
-            android:layout_height="92dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/tra" />
-
-        <LinearLayout
-            android:layout_width="394dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/textView11"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="꽃꽂이"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/tvEnd1"
-                android:layout_width="match_parent"
-                android:layout_height="62dp"
-                android:text="TextView"
-                android:textSize="24sp" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="60dp"
-            android:layout_height="80dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/mu" />
-
-        <LinearLayout
-            android:layout_width="258dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tvYou1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="꽃꽂이"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/textView15"
-                android:layout_width="match_parent"
-                android:layout_height="44dp"
-                android:text="TextView"
-                android:textSize="24sp" />
-        </LinearLayout>
-    </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
