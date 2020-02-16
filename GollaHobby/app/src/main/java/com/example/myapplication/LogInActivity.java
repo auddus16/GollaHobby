@@ -86,8 +86,8 @@ public class LogInActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
 
-                Intent nameIntent = new Intent(getApplicationContext(), ResultActivity.class);
-                nameIntent.putExtra("Name", etName.getText().toString());
+                Intent nIntent = new Intent(getApplicationContext(), ResultActivity.class);
+                nIntent.putExtra("Name", etName.getText().toString());
             }
         });
     }
