@@ -7,8 +7,10 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
-import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -22,8 +24,11 @@ public class LogInActivity extends AppCompatActivity {
     ArrayList<String> arrayList;
     ArrayAdapter<String> arrayAdapter;
 
-    Button btnNext;
+    Button btnStart;
     EditText etName;
+    RadioGroup radioGroup;
+    RadioButton rbMan;
+    RadioButton rbWoman;
 
 
     @Override
@@ -50,15 +55,35 @@ public class LogInActivity extends AppCompatActivity {
         spinner = (Spinner)findViewById(R.id.spinner);
         spinner.setAdapter(arrayAdapter);
 
-        btnNext = findViewById(R.id.btnNext);
+        btnStart = findViewById(R.id.btnStart);
         etName = findViewById(R.id.etName);
+        radioGroup = findViewById(R.id.radioGroup);
+        rbMan = findViewById(R.id.rbMan);
+        rbWoman = findViewById(R.id.rbWoman);
 
-        btnNext.setOnClickListener(new View.OnClickListener() {
+
+        btnStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), QuestionActivity.class);
-                intent.putExtra("Name", etName.getText().toString());
-                startActivity(intent);
+
+                if (etName.getText().toString().equals("") && (rbMan.isChecked()==false) && (rbWoman.isChecked()==false)){
+                    Toast.makeText(LogInActivity.this, "정보를 제대로 입력해주세요", Toast.LENGTH_LONG).show();
+                }
+
+                else if(etName.getText().toString().equals("")){
+                    Toast.makeText(LogInActivity.this, "이름을 입력해주세요", Toast.LENGTH_LONG).show();
+                }
+
+                else if((rbMan.isChecked()==false) && (rbWoman.isChecked()==false)){
+                    Toast.makeText(LogInActivity.this, "성별을 선택해주세요", Toast.LENGTH_LONG).show();
+                }
+
+                else{
+                    Toast.makeText(LogInActivity.this, "테스트를 시작합니다!!!!!!", Toast.LENGTH_LONG).show();
+                    Intent intent = new Intent(getApplicationContext(), QuestionActivity.class);
+                    intent.putExtra("Name", etName.getText().toString());
+                    startActivity(intent);
+                }
             }
         });
     }

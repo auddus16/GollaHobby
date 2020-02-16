@@ -46,7 +46,7 @@ public class QuestionActivity<context> extends AppCompatActivity {
         sb=findViewById(R.id.sb);
         tv0=findViewById(R.id.tvHobby);
         tv100=findViewById(R.id.tv100);
-        btnNext=findViewById(R.id.btnNext);
+        btnNext=findViewById(R.id.btnStart);
 
         count=1;
         tvQNum.setText("Q"+String.valueOf(count));

@@ -44,7 +44,7 @@ public class ResultActivity extends AppCompatActivity {
         tvName=findViewById(R.id.tvName);
         tvFirstResult=findViewById(R.id.tvFirstReult);
         tvSecondResult=findViewById(R.id.tvSecondResult);
-        btnNext=findViewById(R.id.btnNext);
+        btnNext=findViewById(R.id.btnStart);
 
         radarChart=findViewById(R.id.mapsearchdetail_radar_chart);
 
