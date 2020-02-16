@@ -40,6 +40,7 @@ public class LogInActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         arrayList = new ArrayList<>();
+        arrayList.add("선택하세요");
         arrayList.add("10대");
         arrayList.add("20대");
         arrayList.add("30대");
@@ -84,6 +85,9 @@ public class LogInActivity extends AppCompatActivity {
                     intent.putExtra("Name", etName.getText().toString());
                     startActivity(intent);
                 }
+
+                Intent nIntent = new Intent(getApplicationContext(), ResultActivity.class);
+                nIntent.putExtra("Name", etName.getText().toString());
             }
         });
     }
