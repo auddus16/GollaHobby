@@ -55,10 +55,10 @@ public class ResultActivity extends AppCompatActivity{
 
         radarChart=findViewById(R.id.mapsearchdetail_radar_chart);
 
-        /*Intent intent = getIntent();
-        String data = intent.getStringExtra("Name");
-        tvName.setText(data+ "님");
-*/
+        Intent intent=getIntent();
+        String dataName = intent.getExtras().getString("Name");
+        tvName.setText(dataName + "님");
+
         dataValue();
         makeChart();
 
@@ -87,7 +87,7 @@ public class ResultActivity extends AppCompatActivity{
             Intent intent;
             @Override
             public void onClick(View v) {
-                switch (btnResult2.getText().toString()){
+                switch (btnResult1.getText().toString()){
                     case "분석형":
                         intent = new Intent(getApplicationContext(), SelectActivity.class);
                         startActivity(intent);
