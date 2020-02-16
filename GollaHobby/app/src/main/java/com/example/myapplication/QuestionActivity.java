@@ -36,7 +36,7 @@ public class QuestionActivity<context> extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question);
-
+//sds
 
         sbProgress=findViewById(R.id.sbProgress);
         tvQues=findViewById(R.id.tvQues);
