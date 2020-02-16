@@ -19,7 +19,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/tv_Name"
+            android:id="@+id/tvName"
             android:layout_width="212dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
@@ -33,7 +33,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/et_Name"
+            android:id="@+id/etName"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="20dp"
@@ -50,7 +50,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/tv_Sex"
+            android:id="@+id/tvSex"
             android:layout_width="212dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
@@ -71,7 +71,7 @@
             android:orientation="horizontal">
 
             <RadioButton
-                android:id="@+id/rb_Man"
+                android:id="@+id/rbMan"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:fontFamily="serif"
@@ -81,7 +81,7 @@
                 android:textStyle="bold" />
 
             <RadioButton
-                android:id="@+id/rb_Woman"
+                android:id="@+id/rbWoman"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:fontFamily="serif"
@@ -100,7 +100,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/tv_Age"
+            android:id="@+id/tvAge"
             android:layout_width="212dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"

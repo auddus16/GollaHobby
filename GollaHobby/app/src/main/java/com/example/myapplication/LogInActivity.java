@@ -6,7 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -20,7 +22,9 @@ public class LogInActivity extends AppCompatActivity {
     ArrayList<String> arrayList;
     ArrayAdapter<String> arrayAdapter;
 
-    Button button;
+    Button btnNext;
+    EditText etName;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -46,12 +50,14 @@ public class LogInActivity extends AppCompatActivity {
         spinner = (Spinner)findViewById(R.id.spinner);
         spinner.setAdapter(arrayAdapter);
 
-        button = findViewById(R.id.btnNext);
+        btnNext = findViewById(R.id.btnNext);
+        etName = findViewById(R.id.etName);
 
-        button.setOnClickListener(new View.OnClickListener() {
+        btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), QuestionActivity.class);
+                intent.putExtra("Name", etName.getText().toString());
                 startActivity(intent);
             }
         });
