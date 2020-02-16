@@ -74,16 +74,16 @@
                 android:textStyle="bold"
                 tools:text="@string/당신은" />
 
-            <TextView
-                android:id="@+id/tvFirstReult"
+            <Button
+                android:id="@+id/btnResult1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="#00FFFFFF"
                 android:fontFamily="serif"
-                android:gravity="center"
-                android:text="@string/OOO"
+                android:text="분석형"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                android:textColor="#E65078"
+                android:textColor="#E00E53"
                 android:textStyle="bold" />
 
             <TextView
@@ -126,16 +126,16 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/tvSecondResult"
+            <Button
+                android:id="@+id/btnResult2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="#00FFFFFF"
                 android:fontFamily="serif"
-                android:gravity="center"
-                android:text="@string/OOO"
+                android:text="오락형"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                android:textColor="#E65078"
+                android:textColor="#E00E53"
                 android:textStyle="bold" />
 
             <TextView
@@ -169,7 +169,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="95dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/button_login"
         android:text="@string/HOME"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
