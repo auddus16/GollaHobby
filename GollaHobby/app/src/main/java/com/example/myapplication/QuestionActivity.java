@@ -51,7 +51,9 @@ public class QuestionActivity<context> extends AppCompatActivity {
         count=1;
         tvQNum.setText("Q"+String.valueOf(count));
 
-        Intent intent =getIntent(); //윤진이 intent
+        Intent intent=getIntent(); //윤진이 intent
+
+        Toast.makeText(QuestionActivity.this,intent.getStringExtra("Name"),Toast.LENGTH_SHORT).show();
 
         sb.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
