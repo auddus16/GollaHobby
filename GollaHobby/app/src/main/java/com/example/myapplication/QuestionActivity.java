@@ -52,7 +52,6 @@ public class QuestionActivity<context> extends AppCompatActivity {
         tvQNum.setText("Q"+String.valueOf(count));
 
         Intent intent=getIntent(); //윤진이 intent
-
         Toast.makeText(QuestionActivity.this,intent.getStringExtra("Name"),Toast.LENGTH_SHORT).show();
 
         sb.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
@@ -141,6 +140,7 @@ public class QuestionActivity<context> extends AppCompatActivity {
                 } //seekbar를 설정하고, Q10이하일 때 다음 화면으로 넘어간다.
                 if((count==10)&&!(tvSb.getText().equals(""))){
                     Intent intent = new Intent(getApplicationContext(), ResultActivity.class);
+                    intent.putExtra("Name",intent.getStringExtra("Name"));
                     intent.putExtra("productiontype",productiontype); //제작형 합
                     intent.putExtra("creationtype",creationtype); //창작형 합
                     intent.putExtra("appreciationtype",appreciationtype); //감상형 합
@@ -151,8 +151,7 @@ public class QuestionActivity<context> extends AppCompatActivity {
             }
         });
 
-
+       
 
     }// End onCreate
-
 }// End class
