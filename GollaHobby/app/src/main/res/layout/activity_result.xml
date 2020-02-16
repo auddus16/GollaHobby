@@ -28,16 +28,21 @@
             android:layout_marginTop="5dp"
             android:fontFamily="serif"
             android:gravity="center"
-            android:text="@string/황명연"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
             android:textStyle="bold" />
 
-        <ImageView
+        <com.github.mikephil.charting.charts.RadarChart
+            android:id="@+id/mapsearchdetail_radar_chart"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="10dp" />
+
+        <!--<ImageView
             android:id="@+id/resultGraph"
             android:layout_width="match_parent"
             android:layout_height="221dp"
             android:layout_marginTop="10dp"
-            app:srcCompat="@drawable/graph" />
+            app:srcCompat="@drawable/graph" />-->
 
         <LinearLayout
             android:layout_width="match_parent"
