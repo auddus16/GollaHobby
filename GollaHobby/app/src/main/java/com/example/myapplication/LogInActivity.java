@@ -84,13 +84,17 @@ public class LogInActivity extends AppCompatActivity {
                     Toast.makeText(LogInActivity.this, "테스트를 시작합니다!!!!!!", Toast.LENGTH_LONG).show();
                     Intent intent = new Intent(getApplicationContext(), QuestionActivity.class);
                     intent.putExtra("Name", etName.getText().toString());
+
+//                    Intent nIntent = new Intent(getApplicationContext(), ResultActivity.class);
+//                    nIntent.putExtra("Name", etName.getText().toString());
+
                     startActivity(intent);
                 }
 
             }
         });
-        Intent nIntent = new Intent(getApplicationContext(), ResultActivity.class);
-        nIntent.putExtra("Name", etName.getText().toString());
-        startActivity(nIntent);
+//        Intent nIntent = new Intent(getApplicationContext(), ResultActivity.class);
+//        nIntent.putExtra("Name", etName.getText().toString());
+//        startActivity(nIntent);
     }
 }
