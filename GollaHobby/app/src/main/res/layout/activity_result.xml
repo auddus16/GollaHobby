@@ -81,7 +81,6 @@
                 android:layout_weight="1"
                 android:background="#00FFFFFF"
                 android:fontFamily="serif"
-                android:text="분석형"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textColor="#E00E53"
                 android:textStyle="bold" />
@@ -133,7 +132,6 @@
                 android:layout_weight="1"
                 android:background="#00FFFFFF"
                 android:fontFamily="serif"
-                android:text="오락형"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textColor="#E00E53"
                 android:textStyle="bold" />
