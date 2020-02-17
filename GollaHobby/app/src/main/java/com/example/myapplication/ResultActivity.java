@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -46,6 +47,10 @@ public class ResultActivity extends AppCompatActivity{
 
     ArrayList<Integer> arr = new ArrayList<Integer>();
     HashMap<String, Integer> map = new HashMap<>();
+
+    HashMap<String, Double> map2 = new HashMap<>();//same score
+
+    Double num;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -87,8 +92,22 @@ public class ResultActivity extends AppCompatActivity{
 
         Collections.sort(arr);
 
-        btnResult1.setText(getKey(map, arr.get(4)));
-        btnResult2.setText(getKey(map, arr.get(3)));
+        if(arr.get(4)==arr.get(3)){
+
+            Toast.makeText(ResultActivity.this, "동점이라우", Toast.LENGTH_SHORT).show();
+            num=(double)arr.get(4)+ 0.1;
+
+            map2.put(getKey(map, arr.get(4)),num);
+            /*map2.put(getKey(map, arr.get(3)), num-0.1);*/
+
+            btnResult1.setText(getKey(map2, num));
+            btnResult2.setText(getKey(map, arr.get(3)));
+        }
+
+        else{
+            btnResult1.setText(getKey(map, arr.get(4)));
+            btnResult2.setText(getKey(map, arr.get(3)));
+        }
 
         dataValue();
         makeChart();
@@ -176,8 +195,8 @@ public class ResultActivity extends AppCompatActivity{
 
     public static <K,V> K getKey(HashMap<K, V> map, V value){//해쉬맵에서 value값으로 key값 찾기
 
-        for(K key: map.keySet()){
-            if(value==map.get(key)){
+        for(K key: map.keySet()) {
+            if (value == map.get(key)) {
                 return key;
             }
         }

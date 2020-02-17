@@ -13,21 +13,28 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="60dp"
         android:fontFamily="serif"
         android:text="취미테스트를 시작하겠습니다.\n모든 설문에 성실히 답변해주세요!"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textStyle="bold" />
 
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="wrap_content"
+        android:layout_height="199dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp" />
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         android:fontFamily="serif"
         android:gravity="center"
-        android:text="해당질문에 seekbar"
+        android:text="슬라이드를 이용하여\n 해당 설문에 대한 본인의 점수를 입력해주세요"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textStyle="bold" />
 
@@ -36,7 +43,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/button_login"
         android:text="NEXT"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
