@@ -37,8 +37,8 @@ public class LogInActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        toolbar = (Toolbar)findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);                   //툴바
+//        toolbar = (Toolbar)findViewById(R.id.toolbar);
+//        setSupportActionBar(toolbar);                   //툴바 이거 안해도됨 ;; 나만 이거 왜씀
 
         arrayList = new ArrayList<>();
         arrayList.add("선택하세요");
