@@ -38,7 +38,7 @@ public class LogInActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         toolbar = (Toolbar)findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        setSupportActionBar(toolbar);                   //툴바
 
         arrayList = new ArrayList<>();
         arrayList.add("선택하세요");
@@ -55,7 +55,7 @@ public class LogInActivity extends AppCompatActivity {
         arrayAdapter = new ArrayAdapter<>(getApplicationContext(),
                 android.R.layout.simple_spinner_dropdown_item, arrayList);
         spinner = (Spinner)findViewById(R.id.spinner);
-        spinner.setAdapter(arrayAdapter);
+        spinner.setAdapter(arrayAdapter);               //스피너
 
         btnStart = findViewById(R.id.btnStart);
         etName = findViewById(R.id.etName);
@@ -68,33 +68,46 @@ public class LogInActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                if (etName.getText().toString().equals("") && (rbMan.isChecked()==false) && (rbWoman.isChecked()==false)){
-                    Toast.makeText(LogInActivity.this, "정보를 제대로 입력해주세요", Toast.LENGTH_LONG).show();
+
+                if (etName.getText().toString().equals("") && (rbMan.isChecked()==false) && (rbWoman.isChecked()==false) && spinner.getSelectedItem() == "선택하세요"){
+                    Toast.makeText(LogInActivity.this, "정보를 입력해주세요", Toast.LENGTH_LONG).show();
                 }
 
                 else if(etName.getText().toString().equals("")){
-                    Toast.makeText(LogInActivity.this, "이름을 입력해주세요", Toast.LENGTH_LONG).show();
-                }
+                    if((rbMan.isChecked()==false) && (rbWoman.isChecked()==false)){
+                        Toast.makeText(LogInActivity.this, "이름과 성별을 입력해주세요", Toast.LENGTH_LONG).show();
+                    }
+                    else if(spinner.getSelectedItem() == "선택하세요"){
+                        Toast.makeText(LogInActivity.this, "이름과 나이를 입력해주세요", Toast.LENGTH_LONG).show();
+                    }
+                    else{
+                        Toast.makeText(LogInActivity.this, "이름을 입력해주세요", Toast.LENGTH_LONG).show();
+                    }
+                }               //이름 입력 안했을 때
 
                 else if((rbMan.isChecked()==false) && (rbWoman.isChecked()==false)){
-                    Toast.makeText(LogInActivity.this, "성별을 선택해주세요", Toast.LENGTH_LONG).show();
-                }
+                    if(spinner.getSelectedItem() == "선택하세요"){
+                        Toast.makeText(LogInActivity.this, "성별과 나이를 선택해주세요", Toast.LENGTH_LONG).show();
+                    }
+                    else {
+                        Toast.makeText(LogInActivity.this, "성별을 선택해주세요", Toast.LENGTH_LONG).show();
+                    }
+                }               //성별 선택 안했을 때
+
+                else if(spinner.getSelectedItem() == "선택하세요"){
+                    Toast.makeText(LogInActivity.this, "나이를 선택해주세요", Toast.LENGTH_LONG).show();
+                }               //나이 선택 안했을 때
 
                 else{
                     Toast.makeText(LogInActivity.this, "테스트를 시작합니다!!!!!!", Toast.LENGTH_LONG).show();
+                                    //테스트 시작
                     Intent intent = new Intent(getApplicationContext(), QuestionActivity.class);
                     intent.putExtra("Name", etName.getText().toString());
-
-//                    Intent nIntent = new Intent(getApplicationContext(), ResultActivity.class);
-//                    nIntent.putExtra("Name", etName.getText().toString());
 
                     startActivity(intent);
                 }
 
             }
         });
-//        Intent nIntent = new Intent(getApplicationContext(), ResultActivity.class);
-//        nIntent.putExtra("Name", etName.getText().toString());
-//        startActivity(nIntent);
     }
 }
