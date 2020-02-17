@@ -4,6 +4,7 @@ package com.example.myapplication;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.SeekBar;
@@ -31,9 +32,6 @@ public class QuestionActivity<context> extends AppCompatActivity {
     int analysistype=0; //분석형
 
     int count;
-
-    /*Intent intent=getIntent(); //윤진이 intent
-    String Name =intent.getExtras().getString("Name");*/
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -73,7 +71,7 @@ public class QuestionActivity<context> extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(tvSb.getText().equals("")){
-                    Toast.makeText(QuestionActivity.this,"슬라이드해주세요.",Toast.LENGTH_SHORT).show();
+                   Toast.makeText(QuestionActivity.this,"슬라이드해주세요.",Toast.LENGTH_SHORT).show();
                 } //seekbar 설정하지 않으면 toast가 나오고 다음화면으로 넘어가지 않는다
                 if((count!=10)&&!(tvSb.getText().equals(""))){
                     sbProgress.incrementProgressBy(1); //next버튼 누르면 상위seekbar 증가
