@@ -46,9 +46,9 @@ public class ResultActivity extends AppCompatActivity{
     ImageButton btnLogo;
 
     ArrayList<Integer> arr = new ArrayList<Integer>();
-    HashMap<String, Integer> map = new HashMap<>();
+    HashMap<String, Integer> map = new HashMap<>();//same score
 
-    HashMap<String, Double> map2 = new HashMap<>();//same score
+    HashMap<String, Integer> map2 = new HashMap<>();//same score
 
     Double num;
 
@@ -65,6 +65,7 @@ public class ResultActivity extends AppCompatActivity{
         btnNext=findViewById(R.id.btnStart);
         btnResult1=findViewById(R.id.btnResult1);
         btnResult2=findViewById(R.id.btnResult2);
+
 
         radarChart=findViewById(R.id.mapsearchdetail_radar_chart);
 
@@ -90,20 +91,37 @@ public class ResultActivity extends AppCompatActivity{
         map.put("오락형", entertain);
         map.put("분석형", analy);
 
-        Collections.sort(arr);
+        map2.put("제작형", product);
+        map2.put("창작형", create);
+        map2.put("감상형", appreciation);
+        map2.put("오락형", entertain);
+        map2.put("분석형", analy);
 
-        if(arr.get(4)==arr.get(3)){
+        Collections.sort(arr);//정렬
+
+       /* if(arr.get(4)==arr.get(3)){
 
             Toast.makeText(ResultActivity.this, "동점이라우", Toast.LENGTH_SHORT).show();
             num=(double)arr.get(4)+ 0.1;
 
             map2.put(getKey(map, arr.get(4)),num);
-            /*map2.put(getKey(map, arr.get(3)), num-0.1);*/
+            *//*map2.put(getKey(map, arr.get(3)), num-0.1);*//*
 
             btnResult1.setText(getKey(map2, num));
             btnResult2.setText(getKey(map, arr.get(3)));
-        }
+        }*/
+        if(arr.get(4)==arr.get(3)){//과연 될까
+            Toast.makeText(ResultActivity.this, "동점", Toast.LENGTH_SHORT).show();
 
+            String title= getKey(map, arr.get(4));
+
+            btnResult1.setText(getKey(map, arr.get(4)));
+            map.remove(getKey(map, arr.get(4)));
+
+            btnResult2.setText(getKey(map, arr.get(3)));
+            map.put(title, arr.get(4));
+
+        }
         else{
             btnResult1.setText(getKey(map, arr.get(4)));
             btnResult2.setText(getKey(map, arr.get(3)));
@@ -207,11 +225,11 @@ public class ResultActivity extends AppCompatActivity{
     public ArrayList<RadarEntry> dataValue(){
         ArrayList<RadarEntry> dataVals = new ArrayList<>();
 
-        dataVals.add(new RadarEntry(map.get("분석형")));
-        dataVals.add(new RadarEntry(map.get("오락형")));
-        dataVals.add(new RadarEntry(map.get("감상형")));
-        dataVals.add(new RadarEntry(map.get("제작형")));
-        dataVals.add(new RadarEntry(map.get("창작형")));
+        dataVals.add(new RadarEntry(map2.get("분석형")));
+        dataVals.add(new RadarEntry(map2.get("오락형")));
+        dataVals.add(new RadarEntry(map2.get("감상형")));
+        dataVals.add(new RadarEntry(map2.get("제작형")));
+        dataVals.add(new RadarEntry(map2.get("창작형")));
 
         return dataVals;
     }
