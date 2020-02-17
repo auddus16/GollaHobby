@@ -99,7 +99,7 @@ public class LogInActivity extends AppCompatActivity {
                 }               //나이 선택 안했을 때
 
                 else{
-                    Toast.makeText(LogInActivity.this, "테스트를 시작합니다!!!!!!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(LogInActivity.this, "테스트를 시작합니다!!!!!!", Toast.LENGTH_SHORT).show();
                                     //테스트 시작
                     Intent intent = new Intent(getApplicationContext(), QuestionActivity.class);
                     intent.putExtra("Name", etName.getText().toString());
