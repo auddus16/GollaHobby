@@ -11,9 +11,11 @@
         android:id="@+id/tvEnd2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="serif"
         android:text="오락형"
         android:textAlignment="center"
-        android:textSize="36sp" />
+        android:textSize="36sp"
+        android:textStyle="bold" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -47,15 +49,19 @@
                         android:id="@+id/tvHorse"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:fontFamily="serif"
                         android:text="승마"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/tvHorseEx"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:fontFamily="serif"
                         android:text="TextView"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -82,15 +88,19 @@
                         android:id="@+id/tvSword"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:fontFamily="serif"
                         android:text="검도"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/tvSwordEx"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:fontFamily="serif"
                         android:text="TextView"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -117,15 +127,19 @@
                         android:id="@+id/tvClimb"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:fontFamily="serif"
                         android:text="클라이밍"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/tvClimbEx"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:fontFamily="serif"
                         android:text="TextView"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -152,15 +166,19 @@
                         android:id="@+id/tvDron"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:fontFamily="serif"
                         android:text="드론"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/tvDronEx"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:fontFamily="serif"
                         android:text="TextView"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

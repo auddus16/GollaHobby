@@ -11,9 +11,11 @@
         android:id="@+id/tvEnd2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="serif"
         android:text="창작형"
         android:textAlignment="center"
-        android:textSize="36sp" />
+        android:textSize="36sp"
+        android:textStyle="bold" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -47,15 +49,19 @@
                         android:id="@+id/tvPicture"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:fontFamily="serif"
                         android:text="사진찍기"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/tvPictureEx"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:fontFamily="serif"
                         android:text="TextView"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -82,15 +88,19 @@
                         android:id="@+id/tvWall"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:fontFamily="serif"
                         android:text="벽화 봉사"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/tvWallEx"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:fontFamily="serif"
                         android:text="TextView"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -117,15 +127,19 @@
                         android:id="@+id/tvDraw"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:fontFamily="serif"
                         android:text="그림그리기"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/tvDrawEx"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:fontFamily="serif"
                         android:text="TextView"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
 

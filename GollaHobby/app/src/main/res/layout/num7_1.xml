@@ -51,7 +51,8 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="serif"
                         android:text="꽃꽂이"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/tvFlowerEx"
@@ -59,7 +60,8 @@
                         android:layout_height="match_parent"
                         android:fontFamily="serif"
                         android:text="TextView"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -86,15 +88,19 @@
                         android:id="@+id/tvWood"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:fontFamily="serif"
                         android:text="목공예"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/tvWoodEx"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:fontFamily="serif"
                         android:text="TextView"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -121,15 +127,19 @@
                         android:id="@+id/tvDessert"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:fontFamily="serif"
                         android:text="디저트 만들기"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/tvDessertEx"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:fontFamily="serif"
                         android:text="TextView"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -157,15 +167,19 @@
                         android:id="@+id/tvCross"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:fontFamily="serif"
                         android:text="십자수 만들기"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/tvCrossEx"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:fontFamily="serif"
                         android:text="TextView"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
