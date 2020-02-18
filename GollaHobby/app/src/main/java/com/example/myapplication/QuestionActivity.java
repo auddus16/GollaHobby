@@ -52,8 +52,8 @@ public class QuestionActivity<context> extends AppCompatActivity {
         count=1;
         tvQNum.setText("Q"+String.valueOf(count));
 
-        Intent intent=getIntent(); //윤진이 intent
-        final String Name =intent.getStringExtra("Name");
+        Intent intent=getIntent(); //LoginActivity intent
+        final String Name =intent.getStringExtra("Name"); //사용자 name intent
 
 
         sb.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
@@ -107,57 +107,47 @@ public class QuestionActivity<context> extends AppCompatActivity {
                             analysistype+=sb.getProgress(); //분석형
                             break;
                     } //제작형, 창작형, 감상형, 오락형, 분석형 합 구하기
-                    tvQNum.setText("Q"+String.valueOf(++count)); //next버튼 누르면 Q1 Q2,,, 질문숫자 증가
+                    if(count<10){
+                        tvQNum.setText("Q"+String.valueOf(++count)); //next버튼 누르면 Q1 Q2,,, 질문숫자 증가
+                    }else if(count==10){
+                        tvQNum.setText("Q"+String.valueOf(count++));
+                    }
                     switch (count-1){  //next버튼 누르면 질문변경
                         case 1:
                             tvQ.setText("나는 레고를 좋아한다."); //제작형
-                            sb.incrementProgressBy(-50); //next버튼 누르면 seekbar 0으로 초기화
-                            tvSb.setText(null);
                             break;
                         case 2:
                             tvQ.setText("나는 아이디어내기를 좋아한다."); //창작형
-                            sb.incrementProgressBy(-50); //next버튼 누르면 seekbar 0으로 초기화
-                            tvSb.setText(null);
                             break;
                         case 3:
                             tvQ.setText("나는 미적감각이 뛰어나다."); //창작형
-                            sb.incrementProgressBy(-50); //next버튼 누르면 seekbar 0으로 초기화
-                            tvSb.setText(null);
                             break;
                         case 4:
                             tvQ.setText("나는 혼자 깊게 생각하는 경향이 있다."); //감상형
-                            sb.incrementProgressBy(-50); //next버튼 누르면 seekbar 0으로 초기화
-                            tvSb.setText(null);
                             break;
                         case 5:
                             tvQ.setText("나는 오감을 사용하는 활동을 좋아한다."); //감상형
-                            sb.incrementProgressBy(-50); //next버튼 누르면 seekbar 0으로 초기화
-                            tvSb.setText(null);
                             break;
                         case 6:
                             tvQ.setText("나는 관계지향적이다."); //오락형
-                            sb.incrementProgressBy(-50); //next버튼 누르면 seekbar 0으로 초기화
-                            tvSb.setText(null);
                             break;
                         case 7:
                             tvQ.setText("나는 성취감을 느끼는 것을 좋아한다."); //오락형
-                            sb.incrementProgressBy(-50); //next버튼 누르면 seekbar 0으로 초기화
-                            tvSb.setText(null);
                             break;
                         case 8:
                             tvQ.setText("나는 토론을 좋아한다."); //분석형
-                            sb.incrementProgressBy(-50); //next버튼 누르면 seekbar 0으로 초기화
-                            tvSb.setText(null);
                             break;
                         case 9:
                             tvQ.setText("나는 비평하는 것을 좋아한다."); //분석형
-                            sb.incrementProgressBy(-50); //next버튼 누르면 seekbar 0으로 초기화
-                            tvSb.setText(null);
                             break;
                         case 10:
                             break;
                     }
-                } //seekbar를 설정하고, Q10이하일 때 다음 화면으로 넘어간다.
+                    if(count<11){
+                        sb.incrementProgressBy(-50); //next버튼 누르면 seekbar 0으로 초기화
+                        tvSb.setText(null);
+                    }
+                } //seekbar를 설정하고, Q10 다음 화면으로 넘어간다.
                 if((count==11)&&!(tvSb.getText().equals(""))){
                     Intent intent = new Intent(getApplicationContext(), ResultActivity.class);
                     intent.putExtra("Name",Name);
