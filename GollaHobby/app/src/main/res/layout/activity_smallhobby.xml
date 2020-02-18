@@ -39,7 +39,6 @@
         android:layout_height="159dp"
         android:layout_marginTop="20dp"
         android:fontFamily="serif"
-        android:text="꽃꽂이입니다."
         android:textStyle="normal" />
 
     <Button
