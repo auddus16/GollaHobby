@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#3397BCE4"
+    android:gravity="center_horizontal"
     android:orientation="vertical">
 
     <include
@@ -42,7 +43,6 @@
         android:id="@+id/btnStart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
         android:layout_marginTop="50dp"
         android:background="@drawable/button_login"
         android:text="NEXT"
