@@ -65,9 +65,9 @@ public class num7_1tap extends Fragment {
         tvWoodEx.setText("#목공예 #DIY가구 #나만의 #가구");
         tvCrossEx.setText("#십자수 #십자수도안 #십자수완성");
 
-        tvType.setText("\"당신은 꼼꼼하고 책임감있는 사람입니다.\"\n" +
+        tvType.setText("\"꼼꼼하고 책임감있는 사람입니다.\"\n" +
                 "\"계획적이며, 미래에 대비하는 편입니다.\"\n" +
-                "\"업무에 있어서 개인 감정을 배제하는 것에 익숙하고,\n                   " +
+                "\"업무에 있어서 개인 감정을 배제하는 것에 익숙하고,\n                 " +
                 "평소 결단력과 실형력을 가지고 있습니다.\"");
 
 

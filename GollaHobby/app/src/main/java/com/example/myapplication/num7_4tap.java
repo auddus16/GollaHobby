@@ -52,15 +52,15 @@ public class num7_4tap extends Fragment {
         tvClimb = view.findViewById(R.id.tvClimb);
         tvDron = view.findViewById(R.id.tvDron);
         tvHorseEx = view.findViewById(R.id.tvHorseEx);
-        tvHorseEx.setText("#열정가 #동물과교감 #자세교정");
+        tvHorseEx.setText("#승마 #동물과교감 #자세교정");
         tvSwordEx = view.findViewById(R.id.tvSwordEx);
-        tvSwordEx.setText("#열정가 #건강한신체 #인품향상");
+        tvSwordEx.setText("#검도 #건강한신체 #인품향상");
         tvClimbEx = view.findViewById(R.id.tvClimbEx);
-        tvClimbEx.setText("#열정가 #다이어트 #건강한신체");
+        tvClimbEx.setText("#클라이밍 #다이어트 #건강한신체");
         tvDronEx = view.findViewById(R.id.tvDronEx);
-        tvDronEx.setText("#열정가 #자유로움 #힐링");
+        tvDronEx.setText("#드론 #자유로움 #힐링");
         tvType = view.findViewById(R.id.tvType);
-        tvType.setText("\"당신은 호기심이 많고 사람을 좋아하는 열정가입니다.\"\n" +
+        tvType.setText("\"호기심이 많고 사람을 좋아하는 열정가입니다.\"\n" +
                 "\"자유분방하고, 재미를 중요시하는,\n" +
                 "                            따뜻한 감성의 사람이기도 합니다.\"\n" +
                 "\"본인의 생각을 전달할 때 말로 하는 것이 편합니다.\"");

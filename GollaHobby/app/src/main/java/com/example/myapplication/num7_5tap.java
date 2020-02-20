@@ -41,14 +41,14 @@ public class num7_5tap extends Fragment {
         tvDebate = view.findViewById(R.id.tvDebate);
         tvStudyFL = view.findViewById(R.id.tvStudyFL);
         tvDebateEx = view.findViewById(R.id.tvDebateEx);
-        tvDebateEx.setText("#전략가 #사고력향상 #경청");
+        tvDebateEx.setText("#토론 #사고력향상 #경청");
         tvStudyFLEx = view.findViewById(R.id.tvStudyFLEx);
-        tvStudyFLEx.setText("#전략가 #언어능력향상 #두뇌개발");
+        tvStudyFLEx.setText("#외국어공부 #언어능력향상 #두뇌개발");
         tvType = view.findViewById(R.id.tvType);
-        tvType.setText("\"당신은 비평적인 관점을 가진 뛰어난 전략가입니다.\"\n" +
+        tvType.setText("\"비평적인 관점을 가진 뛰어난 전략가입니다.\"\n" +
                 "\"이상적인 세상을 만들어 가는 사람이기도합니다.\"\n" +
-                "\"시비가 중요해서 친구가 잘못하면 지적해주는 편이며,\n" +
-                "                객관적인 의견에 대한 이야기를 많이 합니다.\"");
+                "\"시비가 중요해서 친구의 잘못을 지적해주는 편이며,\n" +
+                "             객관적인 의견에 대한 이야기를 많이 합니다.\"");
 
         GotoSmallHobby gotoSmallHobby =new GotoSmallHobby();
         ivStudyFL.setOnClickListener(gotoSmallHobby);

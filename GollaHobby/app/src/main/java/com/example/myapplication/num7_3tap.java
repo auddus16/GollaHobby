@@ -58,7 +58,7 @@ public class num7_3tap extends Fragment {
         tvTravelEx = view.findViewById(R.id.tvTravelEx);
         tvTravelEx.setText("#자기계발 #자아발견 #새로운일상");
         tvType = view.findViewById(R.id.tvType);
-        tvType.setText("\"당신은 뛰어난 통찰력과 관찰력을 가진 사람입니다.\"\n" +
+        tvType.setText("\"뛰어난 통찰력과 관찰력을 가진 사람입니다.\"\n" +
                 "\"혼자서 하는 활동을 집중적으로 하는 편이며,\n" +
                 "                   가슴으로 느껴지는 것을 중요시합니다.\"\n" +
                 "\"평소 심신이 편안하고, 침착하게 행동합니다.\"\n" +

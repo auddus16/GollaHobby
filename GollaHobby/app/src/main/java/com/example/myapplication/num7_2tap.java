@@ -50,10 +50,10 @@ public class num7_2tap extends Fragment {
         tvWallEx = view.findViewById(R.id.tvWallEx);
         tvType = view.findViewById(R.id.tvType);
 
-        tvType.setText("\"당신은 이상적인 세상을 만들어 가는 사람입니다.\"\n" +
+        tvType.setText("\"이상적인 세상을 만들어 가는 사람입니다.\"\n" +
                 "\"본인 생각을 말보다 글로 잘 표현합니다.\"\n" +
                 "\"평소 미래, 꿈, 가능성에 관심이 많고,\n" +
-                "              다른 사람의 마음에 잘 공감해주는 편입니다.\"");
+                "            다른 사람의 마음에 잘 공감해주는 편입니다.\"");
 
         GotoSmallHobby gotoSmallHobby = new GotoSmallHobby();
         ivPicture.setOnClickListener(gotoSmallHobby);
