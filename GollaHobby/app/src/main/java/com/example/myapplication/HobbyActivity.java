@@ -24,5 +24,9 @@ public class HobbyActivity extends AppCompatActivity {
         TabLayout tabLayout = findViewById(R.id.tabLayout);
         viewPager.setAdapter(fragmentPagerAdapter);
         tabLayout.setupWithViewPager(viewPager);
+
+        // Intent에 숫자를 받아서 getTabAt에 넣기
+        TabLayout.Tab tab = tabLayout.getTabAt(1);
+        tab.select();
     }
 }
