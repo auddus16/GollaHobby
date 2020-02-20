@@ -37,7 +37,7 @@ public class ResultActivity extends AppCompatActivity{
     RadarChart radarChart;
 
     ArrayList<Integer> arr = new ArrayList<Integer>();
-    HashMap<String, Integer> map = new HashMap<>();//same score
+    HashMap<String, Integer> map = new HashMap<>();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -92,10 +92,11 @@ public class ResultActivity extends AppCompatActivity{
             btnResult2.setText(getKey(map, arr.get(3)));
             map.put(title, arr.get(4));
         }
+
         else if(arr.get(4)!=arr.get(3) && arr.get(3)==arr.get(2)){//1등 1개, 2등이 2개
             Toast.makeText(ResultActivity.this, "동점!그래프를 확인해보세요.", Toast.LENGTH_SHORT).show();
-
         }
+
         else{
             btnResult1.setText(getKey(map, arr.get(4)));
             btnResult2.setText(getKey(map, arr.get(3)));

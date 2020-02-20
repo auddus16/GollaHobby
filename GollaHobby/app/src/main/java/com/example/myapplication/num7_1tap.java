@@ -58,6 +58,11 @@ public class num7_1tap extends Fragment {
         tvDessertEx = view.findViewById(R.id.tvDessertEx);
         tvWoodEx = view.findViewById(R.id.tvWoodEx);
 
+        tvFlowerEx.setText("#꽃꽂이 #플라워 #플로리스트 #꽃");
+        tvDessertEx.setText("#디저트 #베이킹 #홈베이킹");
+        tvWoodEx.setText("#목공예 #DIY가구 #나만의 #가구");
+        tvCrossEx.setText("#십자수 #십자수도안 #십자수완성");
+
 
         GotoSmallHobby gotoSmallHobby =new GotoSmallHobby();
         ivFlower.setOnClickListener(gotoSmallHobby);
