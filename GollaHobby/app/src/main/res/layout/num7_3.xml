@@ -26,6 +26,13 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
+            <TextView
+                android:id="@+id/tvTiltleEx3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -49,8 +56,9 @@
                     <TextView
                         android:id="@+id/tvMusical"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="52dp"
                         android:fontFamily="serif"
+                        android:gravity="center|left"
                         android:text="뮤지컬 감상"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
                         android:textStyle="bold" />
@@ -60,9 +68,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:fontFamily="serif"
-                        android:gravity="center|left"
-                        android:text="TextView"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:gravity="left"
+                        android:text="#삶의 위안  #심리적 통찰"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
@@ -102,8 +110,8 @@
                         android:layout_height="match_parent"
                         android:fontFamily="serif"
                         android:gravity="center|left"
-                        android:text="TextView"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:text="#나만의 향  #추억"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
@@ -131,8 +139,9 @@
                     <TextView
                         android:id="@+id/tvTea"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="59dp"
                         android:fontFamily="serif"
+                        android:gravity="center|left"
                         android:text="차 체험"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
                         android:textStyle="bold" />
@@ -142,9 +151,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:fontFamily="serif"
-                        android:gravity="center|left"
-                        android:text="TextView"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:gravity="left"
+                        android:text="#차분함 #건강"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
@@ -172,8 +181,9 @@
                     <TextView
                         android:id="@+id/tvTravel"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="59dp"
                         android:fontFamily="serif"
+                        android:gravity="center|left"
                         android:text="여행하기"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
                         android:textStyle="bold" />
@@ -183,9 +193,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:fontFamily="serif"
-                        android:gravity="center|left"
-                        android:text="TextView"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:gravity="left"
+                        android:text="#활기참  #새로움"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>

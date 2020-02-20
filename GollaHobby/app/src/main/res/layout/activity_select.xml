@@ -23,11 +23,11 @@
             android:layout_marginTop="132dp"
             android:background="@drawable/button_login"
             android:text="Start Test"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/design_default_color_on_secondary"
             android:textSize="30sp"
             android:textStyle="bold|italic"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintHorizontal_bias="0.54"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -35,14 +35,14 @@
             android:id="@+id/btnHobbySearching"
             android:layout_width="303dp"
             android:layout_height="137dp"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="48dp"
             android:background="@drawable/button_login"
             android:text="Hobby Searching"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/design_default_color_on_secondary"
             android:textSize="30sp"
             android:textStyle="bold|italic"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintHorizontal_bias="0.527"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnStartTest" />
 

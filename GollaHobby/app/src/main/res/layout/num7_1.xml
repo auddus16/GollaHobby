@@ -27,6 +27,13 @@
             android:layout_marginTop="10dp"
             android:orientation="vertical">
 
+            <TextView
+                android:id="@+id/tvTitleEx1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -62,7 +69,7 @@
                         android:fontFamily="serif"
                         android:gravity="center|left"
                         android:text="TextView"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
@@ -90,8 +97,9 @@
                     <TextView
                         android:id="@+id/tvWood"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="62dp"
                         android:fontFamily="serif"
+                        android:gravity="center|left"
                         android:text="목공예"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
                         android:textStyle="bold" />
@@ -101,9 +109,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:fontFamily="serif"
-                        android:gravity="center|left"
+                        android:gravity="left"
                         android:text="TextView"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
@@ -144,7 +152,7 @@
                         android:fontFamily="serif"
                         android:gravity="center|left"
                         android:text="TextView"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -173,8 +181,9 @@
                     <TextView
                         android:id="@+id/tvCross"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="47dp"
                         android:fontFamily="serif"
+                        android:gravity="center|left"
                         android:text="십자수 만들기"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
                         android:textStyle="bold" />
@@ -186,7 +195,7 @@
                         android:fontFamily="serif"
                         android:gravity="center|left"
                         android:text="TextView"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>

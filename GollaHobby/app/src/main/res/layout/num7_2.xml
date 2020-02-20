@@ -26,6 +26,13 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
+            <TextView
+                android:id="@+id/tvTitleEx2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -49,8 +56,9 @@
                     <TextView
                         android:id="@+id/tvPicture"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="62dp"
                         android:fontFamily="serif"
+                        android:gravity="center|left"
                         android:text="사진찍기"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
                         android:textStyle="bold" />
@@ -62,7 +70,7 @@
                         android:fontFamily="serif"
                         android:gravity="center|left"
                         android:text="TextView"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
@@ -90,8 +98,9 @@
                     <TextView
                         android:id="@+id/tvWall"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="64dp"
                         android:fontFamily="serif"
+                        android:gravity="center|left"
                         android:text="벽화 봉사"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
                         android:textStyle="bold" />
@@ -101,9 +110,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:fontFamily="serif"
-                        android:gravity="center|left"
+                        android:gravity="left"
                         android:text="TextView"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
@@ -144,7 +153,7 @@
                         android:fontFamily="serif"
                         android:gravity="center|left"
                         android:text="TextView"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
