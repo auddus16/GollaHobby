@@ -11,6 +11,7 @@ import com.google.android.material.tabs.TabLayout;
 public class HobbyActivity extends AppCompatActivity {
 
     private FragmentPagerAdapter fragmentPagerAdapter;
+    TabLayout.Tab tab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +27,23 @@ public class HobbyActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(viewPager);
 
         // Intent에 숫자를 받아서 getTabAt에 넣기
-        TabLayout.Tab tab = tabLayout.getTabAt(1);
-        tab.select();
+        int getIntent = getIntent().getIntExtra("id", -1);
+        if(getIntent == -1 || getIntent == 0) {
+            tab = tabLayout.getTabAt(0);
+            tab.select();
+        } else if(getIntent == 1)  {
+            tab = tabLayout.getTabAt(1);
+            tab.select();
+        } else if(getIntent == 2) {
+            tab = tabLayout.getTabAt(2);
+            tab.select();
+        } else if(getIntent == 3) {
+            tab = tabLayout.getTabAt(3);
+            tab.select();
+        } else {
+            tab = tabLayout.getTabAt(4);
+            tab.select();
+        }
+
     }
 }
