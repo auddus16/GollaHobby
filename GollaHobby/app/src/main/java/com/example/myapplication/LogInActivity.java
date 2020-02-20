@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
@@ -20,7 +21,7 @@ import java.util.ArrayList;
 
 public class LogInActivity extends AppCompatActivity {
 
-    Toolbar toolbar;
+//    Toolbar toolbar;
     private Spinner spinner;
     ArrayList<String> arrayList;
     ArrayAdapter<String> arrayAdapter;
@@ -30,6 +31,7 @@ public class LogInActivity extends AppCompatActivity {
     RadioGroup radioGroup;
     RadioButton rbMan;
     RadioButton rbWoman;
+    ImageButton btnLogo;
 
 
     @Override
@@ -38,7 +40,7 @@ public class LogInActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
 //        toolbar = (Toolbar)findViewById(R.id.toolbar);
-//        setSupportActionBar(toolbar);                   //툴바 이거 안해도됨 ;; 나만 이거 왜씀
+//        setSupportActionBar(toolbar);                   //툴바 이거 안해도됨 ;;
 
         arrayList = new ArrayList<>();
         arrayList.add("선택하세요");
@@ -62,6 +64,15 @@ public class LogInActivity extends AppCompatActivity {
         radioGroup = findViewById(R.id.radioGroup);
         rbMan = findViewById(R.id.rbMan);
         rbWoman = findViewById(R.id.rbWoman);
+        btnLogo = findViewById(R.id.btnLogo);
+
+        btnLogo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), SelectActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
         btnStart.setOnClickListener(new View.OnClickListener() {
