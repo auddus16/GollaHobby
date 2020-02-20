@@ -29,21 +29,12 @@ import java.util.Vector;
 public class ResultActivity extends AppCompatActivity{
 
     TextView tvName;
-    TextView tvFirst;
-    TextView tvYou1;
-    TextView tvEnd1;
     Button btnResult1;
     Button btnResult2;
-
-    TextView tvSecond;
-    TextView tvYou2;
-    TextView tvEnd2;
-
     Button btnNext;
+    ImageButton btnLogo;
 
     RadarChart radarChart;
-
-    ImageButton btnLogo;
 
     ArrayList<Integer> arr = new ArrayList<Integer>();
     HashMap<String, Integer> map = new HashMap<>();//same score
@@ -61,11 +52,12 @@ public class ResultActivity extends AppCompatActivity{
         btnNext=findViewById(R.id.btnStart);
         btnResult1=findViewById(R.id.btnResult1);
         btnResult2=findViewById(R.id.btnResult2);
-
+        btnLogo = findViewById(R.id.btnLogo);
 
         radarChart=findViewById(R.id.mapsearchdetail_radar_chart);
 
         Intent intent=getIntent();
+
         final String dataName = intent.getStringExtra("Name");
         final int product= intent.getIntExtra("productiontype", -1);
         final int create= intent.getIntExtra("creationtype", -1);
@@ -112,95 +104,69 @@ public class ResultActivity extends AppCompatActivity{
         dataValue();
         makeChart();
 
+        BtnResultListener btnResultListener = new BtnResultListener();
+        btnResult1.setOnClickListener(btnResultListener);
+        btnResult2.setOnClickListener(btnResultListener);
 
-        btnLogo = findViewById(R.id.btnLogo);
+        HomeBtnListener homeBtnListener = new HomeBtnListener();
+        btnNext.setOnClickListener(homeBtnListener);
+        btnLogo.setOnClickListener(homeBtnListener);
 
-        btnLogo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent= new Intent(getApplicationContext(), SelectActivity.class);
-                startActivity(intent);
-
-            }
-        });
-
-        btnResult1.setOnClickListener(new View.OnClickListener() {//첫번째 결과값 클릭이벤트
-            Intent intent;
-            @Override
-            public void onClick(View v) {
-                switch (btnResult1.getText().toString()){
-                    case "분석형":
-                        intent = new Intent(getApplicationContext(), HobbyActivity.class);
-                        intent.putExtra("id", 4);
-                        startActivity(intent);
-                        break;
-                    case "오락형":
-                        intent = new Intent(getApplicationContext(), HobbyActivity.class);
-                        intent.putExtra("id", 3);
-                        startActivity(intent);
-                        break;
-                    case "제작형":
-                        intent = new Intent(getApplicationContext(), HobbyActivity.class);
-                        intent.putExtra("id", 0);
-                        startActivity(intent);
-                        break;
-                    case "감상형":
-                        intent = new Intent(getApplicationContext(), HobbyActivity.class);
-                        intent.putExtra("id", 2);
-                        startActivity(intent);
-                        break;
-                    case "창작형":
-                        intent = new Intent(getApplicationContext(), HobbyActivity.class);
-                        intent.putExtra("id", 1);
-                        startActivity(intent);
-                        break;
-                }
-            }
-        });
-
-        btnResult2.setOnClickListener(new View.OnClickListener() {//두번째 결과값 클릭이벤트
-            Intent intent;
-            @Override
-            public void onClick(View v) {
-                switch (btnResult2.getText().toString()){
-                    case "분석형":
-                        intent = new Intent(getApplicationContext(), HobbyActivity.class);
-                        intent.putExtra("id", 4);
-                        startActivity(intent);
-                        break;
-                    case "오락형":
-                        intent = new Intent(getApplicationContext(), HobbyActivity.class);
-                        intent.putExtra("id", 3);
-                        startActivity(intent);
-                        break;
-                    case "제작형":
-                        intent = new Intent(getApplicationContext(), HobbyActivity.class);
-                        intent.putExtra("id", 0);
-                        startActivity(intent);
-                        break;
-                    case "감상형":
-                        intent = new Intent(getApplicationContext(), HobbyActivity.class);
-                        intent.putExtra("id", 2);
-                        startActivity(intent);
-                        break;
-                    case "창작형":
-                        intent = new Intent(getApplicationContext(), HobbyActivity.class);
-                        intent.putExtra("id", 1);
-                        startActivity(intent);
-                        break;
-                }
-            }
-        });
-
-        btnNext.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), SelectActivity.class);
-                startActivity(intent);
-            }
-        });
 
     }//end of onCreate
+
+    class BtnResultListener implements View.OnClickListener{//Result버튼 이벤트
+        @Override
+        public void onClick(View v){
+            switch (v.getId()){
+                case R.id.btnResult1:
+                    whatPage(btnResult1.getText().toString());
+                    break;
+                case R.id.btnResult2:
+                    whatPage(btnResult2.getText().toString());
+                    break;
+            }
+        }
+
+        public void whatPage(String result){
+            Intent intent;
+            switch (result){
+                case "분석형":
+                    intent = new Intent(getApplicationContext(), HobbyActivity.class);
+                    intent.putExtra("id", 4);
+                    startActivity(intent);
+                    break;
+                case "오락형":
+                    intent = new Intent(getApplicationContext(), HobbyActivity.class);
+                    intent.putExtra("id", 3);
+                    startActivity(intent);
+                    break;
+                case "제작형":
+                    intent = new Intent(getApplicationContext(), HobbyActivity.class);
+                    intent.putExtra("id", 0);
+                    startActivity(intent);
+                    break;
+                case "감상형":
+                    intent = new Intent(getApplicationContext(), HobbyActivity.class);
+                    intent.putExtra("id", 2);
+                    startActivity(intent);
+                    break;
+                case "창작형":
+                    intent = new Intent(getApplicationContext(), HobbyActivity.class);
+                    intent.putExtra("id", 1);
+                    startActivity(intent);
+                    break;
+            }
+        }
+    }
+
+    class HomeBtnListener implements View.OnClickListener{//SelectActivity로 넘어가
+        @Override
+        public void onClick(View v){
+            Intent intent = new Intent(getApplicationContext(), SelectActivity.class);
+            startActivity(intent);
+        }
+    }
 
     public static <K,V> K getKey(HashMap<K, V> map, V value){//해쉬맵에서 value값으로 key값 찾기
 
