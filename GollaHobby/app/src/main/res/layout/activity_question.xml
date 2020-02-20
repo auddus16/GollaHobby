@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#339BC3EE"
+    android:gravity="center_horizontal"
     android:orientation="vertical">
 
     <include
@@ -36,6 +37,7 @@
         android:gravity="center"
         android:inputType="none"
         android:text="본인은 다음 질문에 대해 얼마나 해당하나요?"
+        android:textColor="#000000"
         android:textSize="18sp"
         android:textStyle="bold"
         android:typeface="normal"
@@ -52,6 +54,7 @@
         android:fontFamily="serif"
         android:gravity="center"
         android:text="Q1"
+        android:textColor="#000000"
         android:textSize="18sp" />
 
     <TextView
@@ -63,6 +66,7 @@
         android:fontFamily="serif"
         android:gravity="center"
         android:text="나는 종이접기를 좋아한다."
+        android:textColor="#000000"
         android:textSize="22sp"
         android:textStyle="bold" />
 
@@ -80,7 +84,6 @@
         style="@style/Widget.AppCompat.SeekBar"
         android:layout_width="313dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="50dp"
         android:layout_marginTop="20dp"
         android:backgroundTint="#00415858"
         android:max="50"
@@ -119,12 +122,22 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="110dp"
         android:layout_marginTop="45dp"
         android:background="@drawable/button_login"
+        android:gravity="center_horizontal"
         android:text="NEXT"
         android:textSize="30sp"
         android:textStyle="bold|italic"
         android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:gravity="center_horizontal"
+        android:text="COPYRIGHT. 2020. GOLLAHOBBY. ALL RIGHTS RESERVED."
+        android:textSize="10sp" />
 
 </LinearLayout>
