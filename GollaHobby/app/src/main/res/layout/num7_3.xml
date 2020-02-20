@@ -8,14 +8,22 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/tvEnd2"
+        android:id="@+id/tvType"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="serif"
-        android:text="감상형"
-        android:textAlignment="center"
-        android:textSize="36sp"
-        android:textStyle="bold" />
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/description"
+        android:lineSpacingExtra="4dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:text="TextView"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="16sp" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -25,13 +33,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical" >
-
-            <TextView
-                android:id="@+id/tvTiltleEx3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
             <LinearLayout
                 android:layout_width="match_parent"

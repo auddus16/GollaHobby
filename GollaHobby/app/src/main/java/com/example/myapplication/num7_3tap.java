@@ -30,6 +30,7 @@ public class num7_3tap extends Fragment {
     TextView tvTeaEx;
     TextView tvTravelEx;
     TextView tvPerfumeEx;
+    TextView tvType;
 
     public static num7_3tap newinstance(){
         num7_3tap num7_3tap = new num7_3tap();
@@ -56,6 +57,12 @@ public class num7_3tap extends Fragment {
         tvTeaEx.setText("#스트레스 #저리가라 #수면안정");
         tvTravelEx = view.findViewById(R.id.tvTravelEx);
         tvTravelEx.setText("#자기계발 #자아발견 #새로운일상");
+        tvType = view.findViewById(R.id.tvType);
+        tvType.setText("\"당신은 뛰어난 통찰력과 관찰력을 가진 사람입니다.\"\n" +
+                "\"혼자서 하는 활동을 집중적으로 하는 편이며,\n" +
+                "                   가슴으로 느껴지는 것을 중요시합니다.\"\n" +
+                "\"평소 심신이 편안하고, 침착하게 행동합니다.\"\n" +
+                "\"틀에 맞춰 규칙적으로 생활하는 것을 좋아합니다.\"");
 
         GotoSmallHobby gotoSmallHobby = new GotoSmallHobby();
         ivMusical.setOnClickListener(gotoSmallHobby);
