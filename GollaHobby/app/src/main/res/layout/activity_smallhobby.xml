@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#3397BCE4"
+    android:gravity="center"
     android:orientation="vertical"
     tools:context=".SmallHobbyAcitivty">
 
@@ -14,11 +15,18 @@
         android:layout_height="wrap_content"
         android:background="#3397BC24" />
 
+    <ImageView
+        android:id="@+id/ivHobby"
+        android:layout_width="wrap_content"
+        android:layout_height="169dp"
+        android:layout_marginTop="25dp"
+        app:srcCompat="@drawable/flowerarrangement" />
+
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="serif"
         android:gravity="center"
         android:text="꽃꽂이"
@@ -26,20 +34,22 @@
         android:textSize="30sp"
         android:textStyle="bold" />
 
-    <ImageView
-        android:id="@+id/ivHobby"
-        android:layout_width="wrap_content"
-        android:layout_height="145dp"
-        android:layout_marginTop="25dp"
-        app:srcCompat="@drawable/flowerarrangement" />
-
     <TextView
         android:id="@+id/tvHobby"
-        android:layout_width="match_parent"
-        android:layout_height="159dp"
+        android:layout_width="386dp"
+        android:layout_height="234dp"
+        android:layout_gravity="center"
         android:layout_marginTop="20dp"
+        android:layout_marginBottom="0dp"
         android:fontFamily="serif"
         android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/tvLink"
+        android:layout_width="282dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="0sp"
+        android:text="->자세한 취미설명 " />
 
     <Button
         android:id="@+id/btnBack"
