@@ -41,7 +41,9 @@ public class num7_5tap extends Fragment {
         tvDebate = view.findViewById(R.id.tvDebate);
         tvStudyFL = view.findViewById(R.id.tvStudyFL);
         tvDebateEx = view.findViewById(R.id.tvDebateEx);
+        tvDebateEx.setText("#전략가 #사고력향상 #경청");
         tvStudyFLEx = view.findViewById(R.id.tvStudyFLEx);
+        tvStudyFLEx.setText("#전략가 #언어능력향상 #두뇌개발");
         tvType = view.findViewById(R.id.tvType);
         tvType.setText("\"당신은 비평적인 관점을 가진 뛰어난 전략가입니다.\"\n" +
                 "\"이상적인 세상을 만들어 가는 사람이기도합니다.\"\n" +
