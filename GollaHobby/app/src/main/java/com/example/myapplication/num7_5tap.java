@@ -24,6 +24,7 @@ public class num7_5tap extends Fragment {
     TextView tvStudyFL;
     TextView tvDebateEx;
     TextView tvStudyFLEx;
+    TextView tvType;
 
     public static num7_5tap newinstance(){
         num7_5tap num7_5tap = new num7_5tap();
@@ -41,6 +42,11 @@ public class num7_5tap extends Fragment {
         tvStudyFL = view.findViewById(R.id.tvStudyFL);
         tvDebateEx = view.findViewById(R.id.tvDebateEx);
         tvStudyFLEx = view.findViewById(R.id.tvStudyFLEx);
+        tvType = view.findViewById(R.id.tvType);
+        tvType.setText("\"당신은 비평적인 관점을 가진 뛰어난 전략가입니다.\"\n" +
+                "\"이상적인 세상을 만들어 가는 사람이기도합니다.\"\n" +
+                "\"시비가 중요해서 친구가 잘못하면 지적해주는 편이며,\n" +
+                "                객관적인 의견에 대한 이야기를 많이 합니다.\"");
 
         GotoSmallHobby gotoSmallHobby =new GotoSmallHobby();
         ivStudyFL.setOnClickListener(gotoSmallHobby);
