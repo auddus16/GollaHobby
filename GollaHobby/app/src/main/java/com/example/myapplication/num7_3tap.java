@@ -92,6 +92,7 @@ public class num7_3tap extends Fragment {
                     intent.putExtra("image",byteArray);
                     intent.putExtra("Title",tvMusical.getText());
                     startActivity(intent);
+                    break;
                 case R.id.ivTea:
                 case R.id.tvTea:
                 case R.id.tvTeaEx:
@@ -108,6 +109,7 @@ public class num7_3tap extends Fragment {
                     intent.putExtra("image",byteArray);
                     intent.putExtra("Title",tvTea.getText());
                     startActivity(intent);
+                    break;
                 case R.id.ivTravel:
                 case R.id.tvTravel:
                 case R.id.tvTravelEx:
@@ -124,6 +126,7 @@ public class num7_3tap extends Fragment {
                     intent.putExtra("image",byteArray);
                     intent.putExtra("Title",tvTravel.getText());
                     startActivity(intent);
+                    break;
                 case R.id.ivPerfume:
                 case R.id.tvPerfume:
                 case R.id.tvPerfumeEx:
@@ -140,6 +143,7 @@ public class num7_3tap extends Fragment {
                     intent.putExtra("image",byteArray);
                     intent.putExtra("Title",tvPerfume.getText());
                     startActivity(intent);
+                    break;
             }
         }
     }

@@ -92,6 +92,7 @@ public class num7_4tap extends Fragment {
                     intent.putExtra("image",byteArray);
                     intent.putExtra("Title",tvDron.getText());
                     startActivity(intent);
+                    break;
                 case R.id.ivClimb:
                 case R.id.tvClimb:
                 case R.id.tvClimbEx:
@@ -108,6 +109,7 @@ public class num7_4tap extends Fragment {
                     intent.putExtra("image",byteArray);
                     intent.putExtra("Title",tvClimb.getText());
                     startActivity(intent);
+                    break;
                 case R.id.ivHorse:
                 case R.id.tvHorse:
                 case R.id.tvHorseEx:
@@ -124,6 +126,7 @@ public class num7_4tap extends Fragment {
                     intent.putExtra("image",byteArray);
                     intent.putExtra("Title",tvHorse.getText());
                     startActivity(intent);
+                    break;
                 case R.id.ivSword:
                 case R.id.tvSword:
                 case R.id.tvSwordEx:
@@ -140,6 +143,7 @@ public class num7_4tap extends Fragment {
                     intent.putExtra("image",byteArray);
                     intent.putExtra("Title",tvSword.getText());
                     startActivity(intent);
+                    break;
             }
         }
     }

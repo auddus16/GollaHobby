@@ -46,7 +46,7 @@ public class num7_5tap extends Fragment {
         ivStudyFL.setOnClickListener(gotoSmallHobby);
         ivDebate.setOnClickListener(gotoSmallHobby);
         tvDebate.setOnClickListener(gotoSmallHobby);
-        ivStudyFL.setOnClickListener(gotoSmallHobby);
+        tvStudyFL.setOnClickListener(gotoSmallHobby);
         tvDebateEx.setOnClickListener(gotoSmallHobby);
         tvStudyFLEx.setOnClickListener(gotoSmallHobby);
 
