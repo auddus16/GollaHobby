@@ -89,17 +89,7 @@ public class ResultActivity extends AppCompatActivity{
 
         Collections.sort(arr);//정렬
 
-       /* if(arr.get(4)==arr.get(3)){
 
-            Toast.makeText(ResultActivity.this, "동점이라우", Toast.LENGTH_SHORT).show();
-            num=(double)arr.get(4)+ 0.1;
-
-            map2.put(getKey(map, arr.get(4)),num);
-            *//*map2.put(getKey(map, arr.get(3)), num-0.1);*//*
-
-            btnResult1.setText(getKey(map2, num));
-            btnResult2.setText(getKey(map, arr.get(3)));
-        }*/
         if(arr.get(4)==arr.get(3)){//과연 될까 동점 2개
             Toast.makeText(ResultActivity.this, "동점", Toast.LENGTH_SHORT).show();
 
@@ -120,7 +110,7 @@ public class ResultActivity extends AppCompatActivity{
         makeChart();
 
 
-        /*btnLogo = findViewById(R.id.btnLogo);
+        btnLogo = findViewById(R.id.btnLogo);
 
         btnLogo.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -129,7 +119,7 @@ public class ResultActivity extends AppCompatActivity{
                 startActivity(intent);
 
             }
-        });*/
+        });
 
         btnResult1.setOnClickListener(new View.OnClickListener() {//첫번째 결과값 클릭이벤트
             Intent intent;
@@ -138,7 +128,7 @@ public class ResultActivity extends AppCompatActivity{
                 switch (btnResult1.getText().toString()){
                     case "분석형":
                         intent = new Intent(getApplicationContext(), HobbyActivity.class);
-                        intent.putExtra("id", 0);
+                        intent.putExtra("id", 4);
                         startActivity(intent);
                         break;
                     case "오락형":
@@ -148,7 +138,7 @@ public class ResultActivity extends AppCompatActivity{
                         break;
                     case "제작형":
                         intent = new Intent(getApplicationContext(), HobbyActivity.class);
-                        intent.putExtra("id", 4);
+                        intent.putExtra("id", 0);
                         startActivity(intent);
                         break;
                     case "감상형":
@@ -172,7 +162,7 @@ public class ResultActivity extends AppCompatActivity{
                 switch (btnResult2.getText().toString()){
                     case "분석형":
                         intent = new Intent(getApplicationContext(), HobbyActivity.class);
-                        intent.putExtra("id", 0);
+                        intent.putExtra("id", 4);
                         startActivity(intent);
                         break;
                     case "오락형":
@@ -182,7 +172,7 @@ public class ResultActivity extends AppCompatActivity{
                         break;
                     case "제작형":
                         intent = new Intent(getApplicationContext(), HobbyActivity.class);
-                        intent.putExtra("id", 4);
+                        intent.putExtra("id", 0);
                         startActivity(intent);
                         break;
                     case "감상형":

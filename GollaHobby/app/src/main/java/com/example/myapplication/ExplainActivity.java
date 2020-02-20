@@ -17,7 +17,7 @@ public class ExplainActivity extends AppCompatActivity {
 
     Button nextBtn;
     VideoView vv;
-    ImageButton toolbartop;
+    ImageButton btnLogo;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -25,7 +25,7 @@ public class ExplainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_explain);
 
         vv=findViewById(R.id.videoView);
-        toolbartop=findViewById(R.id.btnLogo);
+        btnLogo=findViewById(R.id.btnLogo);
 
         String uriPath="android.resource://"+getPackageName()+"/"+R.raw.videosample;
         Uri uri= Uri.parse(uriPath);
@@ -61,7 +61,7 @@ public class ExplainActivity extends AppCompatActivity {
             }
         });
 
-        toolbartop.setOnClickListener(new View.OnClickListener() {
+        btnLogo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(getApplicationContext(), SelectActivity.class);
