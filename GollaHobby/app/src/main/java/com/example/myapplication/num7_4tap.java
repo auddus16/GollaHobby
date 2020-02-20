@@ -50,9 +50,13 @@ public class num7_4tap extends Fragment {
         tvClimb = view.findViewById(R.id.tvClimb);
         tvDron = view.findViewById(R.id.tvDron);
         tvHorseEx = view.findViewById(R.id.tvHorseEx);
+        tvHorseEx.setText("#열정가 #동물과교감 #자세교정");
         tvSwordEx = view.findViewById(R.id.tvSwordEx);
+        tvSwordEx.setText("#열정가 #건강한신체 #인품향상");
         tvClimbEx = view.findViewById(R.id.tvClimbEx);
+        tvClimbEx.setText("#열정가 #다이어트 #건강한신체");
         tvDronEx = view.findViewById(R.id.tvDronEx);
+        tvDronEx.setText("#열정가 #자유로움 #힐링");
 
         GotoSmallHobby gotoSmallHobby = new GotoSmallHobby();
         ivHorse.setOnClickListener(gotoSmallHobby);
