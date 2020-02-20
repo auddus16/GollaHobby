@@ -69,8 +69,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:fontFamily="serif"
-                        android:gravity="center|left"
-                        android:text="TextView"
+                        android:gravity="left"
+                        android:text="#일상  #추억"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="bold" />
                 </LinearLayout>
@@ -112,7 +112,7 @@
                         android:layout_height="match_parent"
                         android:fontFamily="serif"
                         android:gravity="left"
-                        android:text="TextView"
+                        android:text="#미술치료  #협동  #사회공헌"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="bold" />
                 </LinearLayout>
@@ -153,7 +153,7 @@
                         android:layout_height="match_parent"
                         android:fontFamily="serif"
                         android:gravity="center|left"
-                        android:text="TextView"
+                        android:text="#차분함  #소소한행복"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="bold" />
                 </LinearLayout>
