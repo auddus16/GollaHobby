@@ -26,6 +26,10 @@ public class num7_3tap extends Fragment {
     TextView tvTea;
     TextView tvTravel;
     TextView tvPerfume;
+    TextView tvMusicalEx;
+    TextView tvTeaEx;
+    TextView tvTravelEx;
+    TextView tvPerfumeEx;
 
     public static num7_3tap newinstance(){
         num7_3tap num7_3tap = new num7_3tap();
@@ -45,83 +49,98 @@ public class num7_3tap extends Fragment {
         tvPerfume = view.findViewById(R.id.tvPerfume);
         tvTea = view.findViewById(R.id.tvTea);
         tvTravel = view.findViewById(R.id.tvTravel);
+        tvMusicalEx = view.findViewById(R.id.tvMusicalEx);
+        tvPerfumeEx = view.findViewById(R.id.tvPerfumeEx);
+        tvTeaEx = view.findViewById(R.id.tvTeaEx);
+        tvTravelEx = view.findViewById(R.id.tvTravelEx);
 
-        ivMusical.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                Bitmap bitmap =((BitmapDrawable)ivMusical.getDrawable()).getBitmap();
-                float scale = (1024/(float)bitmap.getWidth());
-                int image_w = (int)(bitmap.getWidth()*scale);
-                int image_h = (int)(bitmap.getHeight()*scale);
-                Bitmap resize = Bitmap.createScaledBitmap(bitmap,image_w,image_h,true);
-                resize.compress(Bitmap.CompressFormat.JPEG,100,stream);
-                byte[] byteArray = stream.toByteArray();
+        GotoSmallHobby gotoSmallHobby = new GotoSmallHobby();
+        ivMusical.setOnClickListener(gotoSmallHobby);
+        ivTravel.setOnClickListener(gotoSmallHobby);
+        ivTea.setOnClickListener(gotoSmallHobby);
+        ivPerfume.setOnClickListener(gotoSmallHobby);
 
-                Intent intent = new Intent(getActivity(),SmallHobbyAcitivty.class);
-                intent.putExtra("image",byteArray);
-                intent.putExtra("Title",tvMusical.getText());
-                startActivity(intent);
-            }
-        });
+        tvMusical.setOnClickListener(gotoSmallHobby);
+        tvTravel.setOnClickListener(gotoSmallHobby);
+        tvTea.setOnClickListener(gotoSmallHobby);
+        tvPerfume.setOnClickListener(gotoSmallHobby);
 
-        ivTravel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                Bitmap bitmap =((BitmapDrawable)ivTravel.getDrawable()).getBitmap();
-                float scale = (1024/(float)bitmap.getWidth());
-                int image_w = (int)(bitmap.getWidth()*scale);
-                int image_h = (int)(bitmap.getHeight()*scale);
-                Bitmap resize = Bitmap.createScaledBitmap(bitmap,image_w,image_h,true);
-                resize.compress(Bitmap.CompressFormat.JPEG,100,stream);
-                byte[] byteArray = stream.toByteArray();
-
-                Intent intent = new Intent(getActivity(),SmallHobbyAcitivty.class);
-                intent.putExtra("image",byteArray);
-                intent.putExtra("Title",tvTravel.getText());
-                startActivity(intent);
-            }
-        });
-
-        ivTea.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                Bitmap bitmap =((BitmapDrawable)ivTea.getDrawable()).getBitmap();
-                float scale = (1024/(float)bitmap.getWidth());
-                int image_w = (int)(bitmap.getWidth()*scale);
-                int image_h = (int)(bitmap.getHeight()*scale);
-                Bitmap resize = Bitmap.createScaledBitmap(bitmap,image_w,image_h,true);
-                resize.compress(Bitmap.CompressFormat.JPEG,100,stream);
-                byte[] byteArray = stream.toByteArray();
-
-                Intent intent = new Intent(getActivity(),SmallHobbyAcitivty.class);
-                intent.putExtra("image",byteArray);
-                intent.putExtra("Title",tvTea.getText());
-                startActivity(intent);
-            }
-        });
-
-        ivPerfume.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                Bitmap bitmap =((BitmapDrawable)ivPerfume.getDrawable()).getBitmap();
-                float scale = (1024/(float)bitmap.getWidth());
-                int image_w = (int)(bitmap.getWidth()*scale);
-                int image_h = (int)(bitmap.getHeight()*scale);
-                Bitmap resize = Bitmap.createScaledBitmap(bitmap,image_w,image_h,true);
-                resize.compress(Bitmap.CompressFormat.JPEG,100,stream);
-                byte[] byteArray = stream.toByteArray();
-
-                Intent intent = new Intent(getActivity(),SmallHobbyAcitivty.class);
-                intent.putExtra("image",byteArray);
-                intent.putExtra("Title",tvPerfume.getText());
-                startActivity(intent);
-            }
-        });
+        tvMusicalEx.setOnClickListener(gotoSmallHobby);
+        tvTravelEx.setOnClickListener(gotoSmallHobby);
+        tvTeaEx.setOnClickListener(gotoSmallHobby);
+        tvPerfumeEx.setOnClickListener(gotoSmallHobby);
 
         return view;
+    }
+    class GotoSmallHobby implements View.OnClickListener{
+        @Override
+        public void onClick(View v) {
+            switch (v.getId()){
+                case R.id.ivMusical:
+                case R.id.tvMusical:
+                case R.id.tvMusicalEx:
+                    ByteArrayOutputStream stream = new ByteArrayOutputStream();
+                    Bitmap bitmap =((BitmapDrawable)ivMusical.getDrawable()).getBitmap();
+                    float scale = (1024/(float)bitmap.getWidth());
+                    int image_w = (int)(bitmap.getWidth()*scale);
+                    int image_h = (int)(bitmap.getHeight()*scale);
+                    Bitmap resize = Bitmap.createScaledBitmap(bitmap,image_w,image_h,true);
+                    resize.compress(Bitmap.CompressFormat.JPEG,100,stream);
+                    byte[] byteArray = stream.toByteArray();
+
+                    Intent intent = new Intent(getActivity(),SmallHobbyAcitivty.class);
+                    intent.putExtra("image",byteArray);
+                    intent.putExtra("Title",tvMusical.getText());
+                    startActivity(intent);
+                case R.id.ivTea:
+                case R.id.tvTea:
+                case R.id.tvTeaEx:
+                    stream = new ByteArrayOutputStream();
+                    bitmap =((BitmapDrawable)ivTea.getDrawable()).getBitmap();
+                    scale = (1024/(float)bitmap.getWidth());
+                    image_w = (int)(bitmap.getWidth()*scale);
+                    image_h = (int)(bitmap.getHeight()*scale);
+                    resize = Bitmap.createScaledBitmap(bitmap,image_w,image_h,true);
+                    resize.compress(Bitmap.CompressFormat.JPEG,100,stream);
+                    byteArray = stream.toByteArray();
+
+                    intent = new Intent(getActivity(),SmallHobbyAcitivty.class);
+                    intent.putExtra("image",byteArray);
+                    intent.putExtra("Title",tvTea.getText());
+                    startActivity(intent);
+                case R.id.ivTravel:
+                case R.id.tvTravel:
+                case R.id.tvTravelEx:
+                    stream = new ByteArrayOutputStream();
+                    bitmap =((BitmapDrawable)ivTravel.getDrawable()).getBitmap();
+                    scale = (1024/(float)bitmap.getWidth());
+                    image_w = (int)(bitmap.getWidth()*scale);
+                    image_h = (int)(bitmap.getHeight()*scale);
+                    resize = Bitmap.createScaledBitmap(bitmap,image_w,image_h,true);
+                    resize.compress(Bitmap.CompressFormat.JPEG,100,stream);
+                    byteArray = stream.toByteArray();
+
+                    intent = new Intent(getActivity(),SmallHobbyAcitivty.class);
+                    intent.putExtra("image",byteArray);
+                    intent.putExtra("Title",tvTravel.getText());
+                    startActivity(intent);
+                case R.id.ivPerfume:
+                case R.id.tvPerfume:
+                case R.id.tvPerfumeEx:
+                    stream = new ByteArrayOutputStream();
+                    bitmap =((BitmapDrawable)ivPerfume.getDrawable()).getBitmap();
+                    scale = (1024/(float)bitmap.getWidth());
+                    image_w = (int)(bitmap.getWidth()*scale);
+                    image_h = (int)(bitmap.getHeight()*scale);
+                    resize = Bitmap.createScaledBitmap(bitmap,image_w,image_h,true);
+                    resize.compress(Bitmap.CompressFormat.JPEG,100,stream);
+                    byteArray = stream.toByteArray();
+
+                    intent = new Intent(getActivity(),SmallHobbyAcitivty.class);
+                    intent.putExtra("image",byteArray);
+                    intent.putExtra("Title",tvPerfume.getText());
+                    startActivity(intent);
+            }
+        }
     }
 }

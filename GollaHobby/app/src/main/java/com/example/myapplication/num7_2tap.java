@@ -24,6 +24,9 @@ public class num7_2tap extends Fragment {
     TextView tvDraw;
     TextView tvWall;
     TextView tvPicture;
+    TextView tvDrawEx;
+    TextView tvWallEx;
+    TextView tvPictureEx;
 
     public static num7_2tap newinstance(){
         num7_2tap num7_2tap = new num7_2tap();
@@ -41,64 +44,81 @@ public class num7_2tap extends Fragment {
         tvDraw = view.findViewById(R.id.tvDraw);
         tvPicture = view.findViewById(R.id.tvPicture);
         tvWall = view.findViewById(R.id.tvWall);
+        tvDrawEx = view.findViewById(R.id.tvDrawEx);
+        tvPictureEx = view.findViewById(R.id.tvPictureEx);
+        tvWallEx = view.findViewById(R.id.tvWallEx);
 
-        ivPicture.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                Bitmap bitmap =((BitmapDrawable)ivPicture.getDrawable()).getBitmap();
-                float scale = (1024/(float)bitmap.getWidth());
-                int image_w = (int)(bitmap.getWidth()*scale);
-                int image_h = (int)(bitmap.getHeight()*scale);
-                Bitmap resize = Bitmap.createScaledBitmap(bitmap,image_w,image_h,true);
-                resize.compress(Bitmap.CompressFormat.JPEG,100,stream);
-                byte[] byteArray = stream.toByteArray();
+        GotoSmallHobby gotoSmallHobby = new GotoSmallHobby();
+        ivPicture.setOnClickListener(gotoSmallHobby);
+        ivDraw.setOnClickListener(gotoSmallHobby);
+        ivWall.setOnClickListener(gotoSmallHobby);
 
-                Intent intent = new Intent(getActivity(),SmallHobbyAcitivty.class);
-                intent.putExtra("image",byteArray);
-                intent.putExtra("Title",tvPicture.getText());
-                startActivity(intent);
-            }
-        });
+        tvPicture.setOnClickListener(gotoSmallHobby);
+        tvDraw.setOnClickListener(gotoSmallHobby);
+        tvWall.setOnClickListener(gotoSmallHobby);
 
-        ivDraw.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                Bitmap bitmap =((BitmapDrawable)ivDraw.getDrawable()).getBitmap();
-                float scale = (1024/(float)bitmap.getWidth());
-                int image_w = (int)(bitmap.getWidth()*scale);
-                int image_h = (int)(bitmap.getHeight()*scale);
-                Bitmap resize = Bitmap.createScaledBitmap(bitmap,image_w,image_h,true);
-                resize.compress(Bitmap.CompressFormat.JPEG,100,stream);
-                byte[] byteArray = stream.toByteArray();
-
-                Intent intent = new Intent(getActivity(),SmallHobbyAcitivty.class);
-                intent.putExtra("image",byteArray);
-                intent.putExtra("Title",tvDraw.getText());
-                startActivity(intent);
-            }
-        });
-
-        ivWall.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                Bitmap bitmap =((BitmapDrawable)ivWall.getDrawable()).getBitmap();
-                float scale = (1024/(float)bitmap.getWidth());
-                int image_w = (int)(bitmap.getWidth()*scale);
-                int image_h = (int)(bitmap.getHeight()*scale);
-                Bitmap resize = Bitmap.createScaledBitmap(bitmap,image_w,image_h,true);
-                resize.compress(Bitmap.CompressFormat.JPEG,100,stream);
-                byte[] byteArray = stream.toByteArray();
-
-                Intent intent = new Intent(getActivity(),SmallHobbyAcitivty.class);
-                intent.putExtra("image",byteArray);
-                intent.putExtra("Title",tvWall.getText());
-                startActivity(intent);
-            }
-        });
+        tvPictureEx.setOnClickListener(gotoSmallHobby);
+        tvDrawEx.setOnClickListener(gotoSmallHobby);
+        tvWallEx.setOnClickListener(gotoSmallHobby);
 
         return view;
+    }
+    class GotoSmallHobby implements View.OnClickListener{
+        @Override
+        public void onClick(View v) {
+            switch (v.getId()){
+                case R.id.ivWall:
+                case R.id.tvWallEx:
+                case R.id.tvWall:
+                    ByteArrayOutputStream stream = new ByteArrayOutputStream();
+                    Bitmap bitmap =((BitmapDrawable)ivWall.getDrawable()).getBitmap();
+                    float scale = (1024/(float)bitmap.getWidth());
+                    int image_w = (int)(bitmap.getWidth()*scale);
+                    int image_h = (int)(bitmap.getHeight()*scale);
+                    Bitmap resize = Bitmap.createScaledBitmap(bitmap,image_w,image_h,true);
+                    resize.compress(Bitmap.CompressFormat.JPEG,100,stream);
+                    byte[] byteArray = stream.toByteArray();
+
+                    Intent intent = new Intent(getActivity(),SmallHobbyAcitivty.class);
+                    intent.putExtra("image",byteArray);
+                    intent.putExtra("Title",tvWall.getText());
+                    startActivity(intent);
+                    break;
+                case R.id.ivDraw:
+                case R.id.tvDraw:
+                case R.id.tvDrawEx:
+                    stream = new ByteArrayOutputStream();
+                    bitmap =((BitmapDrawable)ivDraw.getDrawable()).getBitmap();
+                    scale = (1024/(float)bitmap.getWidth());
+                    image_w = (int)(bitmap.getWidth()*scale);
+                    image_h = (int)(bitmap.getHeight()*scale);
+                    resize = Bitmap.createScaledBitmap(bitmap,image_w,image_h,true);
+                    resize.compress(Bitmap.CompressFormat.JPEG,100,stream);
+                    byteArray = stream.toByteArray();
+
+                    intent = new Intent(getActivity(),SmallHobbyAcitivty.class);
+                    intent.putExtra("image",byteArray);
+                    intent.putExtra("Title",tvDraw.getText());
+                    startActivity(intent);
+                    break;
+                case R.id.ivPicture:
+                case R.id.tvPicture:
+                case R.id.tvPictureEx:
+                    stream = new ByteArrayOutputStream();
+                    bitmap =((BitmapDrawable)ivPicture.getDrawable()).getBitmap();
+                    scale = (1024/(float)bitmap.getWidth());
+                    image_w = (int)(bitmap.getWidth()*scale);
+                    image_h = (int)(bitmap.getHeight()*scale);
+                    resize = Bitmap.createScaledBitmap(bitmap,image_w,image_h,true);
+                    resize.compress(Bitmap.CompressFormat.JPEG,100,stream);
+                    byteArray = stream.toByteArray();
+
+                    intent = new Intent(getActivity(),SmallHobbyAcitivty.class);
+                    intent.putExtra("image",byteArray);
+                    intent.putExtra("Title",tvPicture.getText());
+                    startActivity(intent);
+                    break;
+            }
+        }
     }
 }
