@@ -21,7 +21,7 @@ public class num7_5tap extends Fragment {
     ImageView ivDebate;
     ImageView ivStudyFL;
     TextView tvDebate;
-    TextView tvStudtFL;
+    TextView tvStudyFL;
 
     public static num7_5tap newinstance(){
         num7_5tap num7_5tap = new num7_5tap();
@@ -35,8 +35,8 @@ public class num7_5tap extends Fragment {
         view = inflater.inflate(R.layout.num7_5, container, false);
         ivStudyFL = view.findViewById(R.id.ivStudyFL);
         ivDebate = view.findViewById(R.id.ivDebate);
-        tvDebate = view.findViewById(R.id.tvStudyFL);
-        tvStudtFL = view.findViewById(R.id.tvDebate);
+        tvDebate = view.findViewById(R.id.tvDebate);
+        tvStudyFL = view.findViewById(R.id.tvStudyFL);
 
         ivStudyFL.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,7 +52,7 @@ public class num7_5tap extends Fragment {
 
                 Intent intent = new Intent(getActivity(),SmallHobbyAcitivty.class);
                 intent.putExtra("image",byteArray);
-                intent.putExtra("Title",tvStudtFL.getText());
+                intent.putExtra("Title",tvStudyFL.getText());
                 startActivity(intent);
             }
         });
