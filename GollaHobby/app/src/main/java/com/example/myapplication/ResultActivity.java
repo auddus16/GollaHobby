@@ -67,11 +67,11 @@ public class ResultActivity extends AppCompatActivity{
 
         Intent intent=getIntent();
         final String dataName = intent.getStringExtra("Name");
-        final int product= intent.getIntExtra("productiontype", 0);
-        final int create= intent.getIntExtra("creationtype", 0);
-        final int appreciation= intent.getIntExtra("appreciationtype", 0);
-        final int entertain= intent.getIntExtra("entertainmenttype", 0);
-        final int analy= intent.getIntExtra("analysistype", 0);
+        final int product= intent.getIntExtra("productiontype", -1);
+        final int create= intent.getIntExtra("creationtype", -1);
+        final int appreciation= intent.getIntExtra("appreciationtype", -1);
+        final int entertain= intent.getIntExtra("entertainmenttype", -1);
+        final int analy= intent.getIntExtra("analysistype", -1);
 
         tvName.setText(dataName + "님");
 
@@ -89,9 +89,8 @@ public class ResultActivity extends AppCompatActivity{
 
         Collections.sort(arr);//정렬
 
-
-        if(arr.get(4)==arr.get(3)){//과연 될까 동점 2개
-            Toast.makeText(ResultActivity.this, "동점", Toast.LENGTH_SHORT).show();
+        if(arr.get(4)==arr.get(3)){//1등이 2개
+            Toast.makeText(ResultActivity.this, "동점!그래프를 확인해보세요.", Toast.LENGTH_SHORT).show();
 
             String title= getKey(map, arr.get(4));
 
@@ -100,6 +99,10 @@ public class ResultActivity extends AppCompatActivity{
 
             btnResult2.setText(getKey(map, arr.get(3)));
             map.put(title, arr.get(4));
+        }
+        else if(arr.get(4)!=arr.get(3) && arr.get(3)==arr.get(2)){//1등 1개, 2등이 2개
+            Toast.makeText(ResultActivity.this, "동점!그래프를 확인해보세요.", Toast.LENGTH_SHORT).show();
+
         }
         else{
             btnResult1.setText(getKey(map, arr.get(4)));
