@@ -131,29 +131,34 @@ public class ResultActivity extends AppCompatActivity{
             }
         });*/
 
-        /*btnResult1.setOnClickListener(new View.OnClickListener() {//첫번째 결과값 클릭이벤트
+        btnResult1.setOnClickListener(new View.OnClickListener() {//첫번째 결과값 클릭이벤트
             Intent intent;
             @Override
             public void onClick(View v) {
                 switch (btnResult1.getText().toString()){
                     case "분석형":
-                        intent = new Intent(getApplicationContext(), SelectActivity.class);
+                        intent = new Intent(getApplicationContext(), HobbyActivity.class);
+                        intent.putExtra("id", 0);
                         startActivity(intent);
                         break;
                     case "오락형":
-                        intent = new Intent(getApplicationContext(), LogInActivity.class);
+                        intent = new Intent(getApplicationContext(), HobbyActivity.class);
+                        intent.putExtra("id", 3);
                         startActivity(intent);
                         break;
                     case "제작형":
-                        intent = new Intent(getApplicationContext(), .class);
+                        intent = new Intent(getApplicationContext(), HobbyActivity.class);
+                        intent.putExtra("id", 4);
                         startActivity(intent);
                         break;
                     case "감상형":
-                        intent = new Intent(getApplicationContext(), LogInActivity.class);
+                        intent = new Intent(getApplicationContext(), HobbyActivity.class);
+                        intent.putExtra("id", 2);
                         startActivity(intent);
                         break;
                     case "창작형":
-                        intent = new Intent(getApplicationContext(), LogInActivity.class);
+                        intent = new Intent(getApplicationContext(), HobbyActivity.class);
+                        intent.putExtra("id", 1);
                         startActivity(intent);
                         break;
                 }
@@ -166,29 +171,33 @@ public class ResultActivity extends AppCompatActivity{
             public void onClick(View v) {
                 switch (btnResult2.getText().toString()){
                     case "분석형":
-                        intent = new Intent(getApplicationContext(), SelectActivity.class);
+                        intent = new Intent(getApplicationContext(), HobbyActivity.class);
+                        intent.putExtra("id", 0);
                         startActivity(intent);
                         break;
                     case "오락형":
-                        intent = new Intent(getApplicationContext(), LogInActivity.class);
+                        intent = new Intent(getApplicationContext(), HobbyActivity.class);
+                        intent.putExtra("id", 3);
                         startActivity(intent);
                         break;
                     case "제작형":
-                        intent = new Intent(getApplicationContext(), .class);
+                        intent = new Intent(getApplicationContext(), HobbyActivity.class);
+                        intent.putExtra("id", 4);
                         startActivity(intent);
                         break;
                     case "감상형":
-                        intent = new Intent(getApplicationContext(), LogInActivity.class);
+                        intent = new Intent(getApplicationContext(), HobbyActivity.class);
+                        intent.putExtra("id", 2);
                         startActivity(intent);
                         break;
                     case "창작형":
-                        intent = new Intent(getApplicationContext(), LogInActivity.class);
+                        intent = new Intent(getApplicationContext(), HobbyActivity.class);
+                        intent.putExtra("id", 1);
                         startActivity(intent);
                         break;
-
                 }
             }
-        });*/
+        });
 
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -7,6 +7,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 import android.widget.VideoView;
 
@@ -16,6 +17,7 @@ public class ExplainActivity extends AppCompatActivity {
 
     Button nextBtn;
     VideoView vv;
+    ImageButton toolbartop;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,7 @@ public class ExplainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_explain);
 
         vv=findViewById(R.id.videoView);
+        toolbartop=findViewById(R.id.btnLogo);
 
         String uriPath="android.resource://"+getPackageName()+"/"+R.raw.videosample;
         Uri uri= Uri.parse(uriPath);
@@ -54,6 +57,14 @@ public class ExplainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), LogInActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        toolbartop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(getApplicationContext(), SelectActivity.class);
                 startActivity(intent);
             }
         });
