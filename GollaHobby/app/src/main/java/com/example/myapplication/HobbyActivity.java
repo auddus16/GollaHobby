@@ -3,12 +3,14 @@ package com.example.myapplication;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.tabs.TabLayout;
 
 public class HobbyActivity extends AppCompatActivity {
@@ -16,11 +18,21 @@ public class HobbyActivity extends AppCompatActivity {
     private FragmentPagerAdapter fragmentPagerAdapter;
     TabLayout.Tab tab;
     ImageButton btnLogo;
+    Button btnBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.num7);
+
+        btnBack = findViewById(R.id.btnBack);
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         //뷰페이저 세팅
         ViewPager viewPager = findViewById(R.id.viewPager);
