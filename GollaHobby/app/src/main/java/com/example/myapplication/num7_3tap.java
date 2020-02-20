@@ -51,8 +51,11 @@ public class num7_3tap extends Fragment {
         tvTravel = view.findViewById(R.id.tvTravel);
         tvMusicalEx = view.findViewById(R.id.tvMusicalEx);
         tvPerfumeEx = view.findViewById(R.id.tvPerfumeEx);
+        tvPerfumeEx.setText("#세상에서 #하나뿐인 #나만의향");
         tvTeaEx = view.findViewById(R.id.tvTeaEx);
+        tvTeaEx.setText("#스트레스 #저리가라 #수면안정");
         tvTravelEx = view.findViewById(R.id.tvTravelEx);
+        tvTravelEx.setText("#자기계발 #자아발견 #새로운일상");
 
         GotoSmallHobby gotoSmallHobby = new GotoSmallHobby();
         ivMusical.setOnClickListener(gotoSmallHobby);
