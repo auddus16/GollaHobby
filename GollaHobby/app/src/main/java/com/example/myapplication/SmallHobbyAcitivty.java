@@ -60,7 +60,7 @@ public class SmallHobbyAcitivty extends AppCompatActivity {
                 @Override
                 public void onClick(View v){
                     Intent intent3=new Intent(Intent.ACTION_VIEW);
-                    intent3.setData(Uri.parse(""));
+                    intent3.setData(Uri.parse("https://www.youtube.com/watch?v=fcn3N-deRrY"));
                     startActivity(intent3);
                 }
             }); // 취미부가설명링크 꽃꽂이
@@ -72,19 +72,19 @@ public class SmallHobbyAcitivty extends AppCompatActivity {
                 @Override
                 public void onClick(View v){
                     Intent intent3=new Intent(Intent.ACTION_VIEW);
-                    intent3.setData(Uri.parse(""));
+                    intent3.setData(Uri.parse("https://www.youtube.com/watch?v=KkJ-IG1rjX8"));
                     startActivity(intent3);
                 }
             }); // 취미부가설명링크 목공예
         }else if(tvTitle.getText().equals("디저트 만들기")){  //제작형
             tvHobby.setText("당신은 꼼꼼하고 책임감있는 사람입니다. 계획적이며, 미래에 대비하는 편입니다. 업무에 있어서 개인 감정을 배제하는 것에 익숙하고, 평소 결단력과 실행력을 가지고 있습니다." +
                     "따라서 추천하는 취미는 디저트 만들기입니다. 젤리, 마카롱, 케이크, 쿠키, 푸딩 등 다양한 디저트 종류가 있습니다. 개인의 취향에 맞게 원하는 모양과 맛으로 만들 수 있습니다. "+"집에서도" +
-                    "만들 수 있는 디저트 레시피들이 많기 때문에 시작하는데에 부담을 가질 필요가 없습니다.");
+                    "만들 수 있는 디저트 레시피들이 많기 때문에 시작하는데에 부담없이 시작할 수 있습니다.");
             tvLink.setOnClickListener(new View.OnClickListener(){
                 @Override
                 public void onClick(View v){
                     Intent intent3=new Intent(Intent.ACTION_VIEW);
-                    intent3.setData(Uri.parse(""));
+                    intent3.setData(Uri.parse("https://www.youtube.com/watch?v=GCHdCV3w2EY"));
                     startActivity(intent3);
                 }
             }); // 취미부가설명링크 디저트 만들기
@@ -96,7 +96,7 @@ public class SmallHobbyAcitivty extends AppCompatActivity {
                 @Override
                 public void onClick(View v){
                     Intent intent3=new Intent(Intent.ACTION_VIEW);
-                    intent3.setData(Uri.parse(""));
+                    intent3.setData(Uri.parse("https://www.youtube.com/watch?v=dfDobzh_zWM"));
                     startActivity(intent3);
                 }
             }); // 취미부가설명링크 십자수 만들기
@@ -108,30 +108,31 @@ public class SmallHobbyAcitivty extends AppCompatActivity {
                 @Override
                 public void onClick(View v){
                     Intent intent3=new Intent(Intent.ACTION_VIEW);
-                    intent3.setData(Uri.parse(""));
+                    intent3.setData(Uri.parse("https://www.youtube.com/watch?v=dOZFQQcWbeY"));
                     startActivity(intent3);
                 }
             }); // 취미부가설명링크 사진찍기
         }else if(tvTitle.getText().equals("벽화 봉사")){ //창작형
             tvHobby.setText("당신은 이상적인 세상을 만들어 가는 사람입니다. 본인 생각을 말로 전달하는 것보다 글로 적을 때 잘 표현합니다. 평소 미래, 꿈, 가능성에 관심이 많고, 다른 사람의 마음에 잘 공감해주는 편입니다." +
                     "따라서 추천하는 취미는 벽화 봉사입니다. 벽화그리기는 미술치료와 통하는 부분이 있습니다. 여럿이 같은 목표를 갖고 작업하다 보면 협동심을 기를 수 있습니다. 각자 자신의 영역에서 개성을 뽐내면서 스스로를 만족시키고," +
-                    "공동으로 하나의 그림을 이룬다는 심리적인 성취감을 얻을 수 있습니다. 동료들과 협동 작업을 하면서 그림을 보는 지역사람들과 소통하 ");
+                "공동으로 하나의 그림을 이룬다는 심리적인 성취감을 얻을 수 있습니다. 동료들과 협동 작업을 하면서 그림을 보는 지역사람들과 소통하고 보람을 느끼고 싶다면 이 활동을 추천합니다.");
             tvLink.setOnClickListener(new View.OnClickListener(){
                 @Override
                 public void onClick(View v){
                     Intent intent3=new Intent(Intent.ACTION_VIEW);
-                    intent3.setData(Uri.parse(""));
+                    intent3.setData(Uri.parse("https://www.youtube.com/watch?v=X6Ig2zOc4z0"));
                     startActivity(intent3);
                 }
             }); // 취미부가설명링크 벽화 봉사
         }else if(tvTitle.getText().equals("그림그리기")){ //창작형
             tvHobby.setText("당신은 이상적인 세상을 만들어 가는 사람입니다. 본인 생각을 말로 전달하는 것보다 글로 적을 때 잘 표현합니다. 평소 미래, 꿈, 가능성에 관심이 많고, 다른 사람의 마음에 잘 공감해주는 편입니다." +
-                    "따라서 추천하는 취미는 그림그리기입니다.");
+                    "따라서 추천하는 취미는 그림그리기입니다. 당신은 작은 시간마다 그려나가며 어느새 그림을 완성해가는 성취감을 느낄 수 있습니다. 활동을 통해 차분해지는 기분을 느끼며 " +
+                    "힐링을 경험해보길 추천합니다.");
             tvLink.setOnClickListener(new View.OnClickListener(){
                 @Override
                 public void onClick(View v){
                     Intent intent3=new Intent(Intent.ACTION_VIEW);
-                    intent3.setData(Uri.parse(""));
+                    intent3.setData(Uri.parse(" https://www.youtube.com/watch?v=nit-4VdaYZg"));
                     startActivity(intent3);
                 }
             }); // 취미부가설명링크 그림그리기
@@ -143,18 +144,19 @@ public class SmallHobbyAcitivty extends AppCompatActivity {
                 @Override
                 public void onClick(View v){
                     Intent intent3=new Intent(Intent.ACTION_VIEW);
-                    intent3.setData(Uri.parse(""));
+                    intent3.setData(Uri.parse("https://www.youtube.com/watch?v=HIQODOM2c5w&list=PL9nbiuMI5_Kq9puZnhSFJa7NxP-3ZvZe0"));
                     startActivity(intent3);
                 }
             }); // 취미부가설명링크 뮤지컬 감상
         }else if(tvTitle.getText().equals("향수만들기")){ //감상형
             tvHobby.setText("당신은 뛰어난 통찰력과 관찰력을 가진 사람입니다. 혼자서 하는 활동을 집중적으로 하는 편이며, 가슴으로 느껴지는 것을 중요시합니다. 평소 심신이 편안하고, 침착하게 행동합니다. 틀에 맞춰 규칙적으로 생활하는 것을 좋아합니다. " +
-                    "따라서 추천하는 취미는 향수만들기입니다.");
+                    "따라서 추천하는 취미는 향수만들기입니다. 세상에는 다양한 향이 있고 그 향은 각자의 경험을 담고 있습니다. 스스로의 향을 찾아가며 행복했던 추억을 떠올리며 미소짓게 만드는 본인만의 향수만들기를 체험해보길 추천합니다."
+            );
             tvLink.setOnClickListener(new View.OnClickListener(){
                 @Override
                 public void onClick(View v){
                     Intent intent3=new Intent(Intent.ACTION_VIEW);
-                    intent3.setData(Uri.parse(""));
+                    intent3.setData(Uri.parse("https://www.youtube.com/watch?v=Yi2Y_R_LyXw"));
                     startActivity(intent3);
                 }
             }); // 취미부가설명링크 향수만들기
@@ -166,7 +168,7 @@ public class SmallHobbyAcitivty extends AppCompatActivity {
                 @Override
                 public void onClick(View v){
                     Intent intent3=new Intent(Intent.ACTION_VIEW);
-                    intent3.setData(Uri.parse(""));
+                    intent3.setData(Uri.parse("https://www.youtube.com/watch?v=NnnrnDf6tLw"));
                     startActivity(intent3);
                 }
             }); // 취미부가설명링크 차체험
@@ -179,19 +181,19 @@ public class SmallHobbyAcitivty extends AppCompatActivity {
                 @Override
                 public void onClick(View v){
                     Intent intent3=new Intent(Intent.ACTION_VIEW);
-                    intent3.setData(Uri.parse(""));
+                    intent3.setData(Uri.parse("https://www.youtube.com/watch?v=CVNB5y54j9A"));
                     startActivity(intent3);
                 }
             }); // 취미부가설명링크 여행하기
         }else if(tvTitle.getText().equals("승마")){ //오락형
             tvHobby.setText("당신은 호기심이 많고 사람을 좋아하는 열정가입니다. 자유분방하고, 재미를 중요시하고, 따뜻한 감성을 가진 겸손한 사람이기도 합니다. 본인의 생각을 다른사람에게 전달할 때 말로 하는 것이 편합니다. " +
                     "따라서 추천하는 취미는 승마입니다. 승마는 남녀노소 누구나 할 수 있는 운동입니다. 우선 정신적으로 스트레스를 줄일 수 있어 정신건강에 좋습니다. 말과 교감함으로서 정서적으로 도움이 됩니다. " +
-                    "허리를 펴고 바른 자세를 유지해야 하므로 자세교정에 매우 좋습니다. 이는 근력의 강화, 유연성의 향을 가져오게 합니다.");
+                    "허리를 펴고 바른 자세를 유지해야 하므로 자세교정에 매우 좋습니다.");
             tvLink.setOnClickListener(new View.OnClickListener(){
                 @Override
                 public void onClick(View v){
                     Intent intent3=new Intent(Intent.ACTION_VIEW);
-                    intent3.setData(Uri.parse(""));
+                    intent3.setData(Uri.parse("https://www.youtube.com/watch?v=YTWDIs5FeFM"));
                     startActivity(intent3);
                 }
             }); // 취미부가설명링크 승마
@@ -204,7 +206,7 @@ public class SmallHobbyAcitivty extends AppCompatActivity {
                 @Override
                 public void onClick(View v){
                     Intent intent3=new Intent(Intent.ACTION_VIEW);
-                    intent3.setData(Uri.parse(""));
+                    intent3.setData(Uri.parse("https://www.youtube.com/watch?v=dW_xlLi5oM8"));
                     startActivity(intent3);
                 }
             }); // 취미부가설명링크 검도
@@ -216,18 +218,18 @@ public class SmallHobbyAcitivty extends AppCompatActivity {
                 @Override
                 public void onClick(View v){
                     Intent intent3=new Intent(Intent.ACTION_VIEW);
-                    intent3.setData(Uri.parse(""));
+                    intent3.setData(Uri.parse("https://www.youtube.com/watch?v=AqRErmnSOio"));
                     startActivity(intent3);
                 }
             }); // 취미부가설명링크 클라이밍
         }else if(tvTitle.getText().equals("드론")){ //오락형
             tvHobby.setText("당신은 호기심이 많고 사람을 좋아하는 열정가입니다. 자유분방하고, 재미를 중요시하고, 따뜻한 감성을 가진 겸손한 사람이기도 합니다. 본인의 생각을 다른사람에게 전달할 때 말로 하는 것이 편합니다. " +
-                    "따라서 추천하는 취미는 드론입니다.");
+                    "따라서 추천하는 취미는 드론입니다. 당신의 섬세한 조종실력으로 원하는 곳을 드론을 이용하여 쾌감을 느낄 수 있습니다. 답답한 실내에서 벗아나 상쾌한 공기를 마시면서 힐링이 됩니다. ");
             tvLink.setOnClickListener(new View.OnClickListener(){
                 @Override
                 public void onClick(View v){
                     Intent intent3=new Intent(Intent.ACTION_VIEW);
-                    intent3.setData(Uri.parse(""));
+                    intent3.setData(Uri.parse("https://www.youtube.com/watch?v=H0dMVDxMOVA"));
                     startActivity(intent3);
                 }
             }); // 취미부가설명링크 드론
@@ -239,7 +241,7 @@ public class SmallHobbyAcitivty extends AppCompatActivity {
                 @Override
                 public void onClick(View v){
                     Intent intent3=new Intent(Intent.ACTION_VIEW);
-                    intent3.setData(Uri.parse(""));
+                    intent3.setData(Uri.parse("https://www.youtube.com/watch?v=X7oz-kAQ-Iw"));
                     startActivity(intent3);
                 }
             }); // 취미부가설명링크 토론하기
@@ -250,7 +252,7 @@ public class SmallHobbyAcitivty extends AppCompatActivity {
                 @Override
                 public void onClick(View v){
                     Intent intent3=new Intent(Intent.ACTION_VIEW);
-                    intent3.setData(Uri.parse(""));
+                    intent3.setData(Uri.parse("https://www.youtube.com/watch?v=UhTJHcNn-pQ"));
                     startActivity(intent3);
                 }
             }); // 취미부가설명링크 외국어공부
