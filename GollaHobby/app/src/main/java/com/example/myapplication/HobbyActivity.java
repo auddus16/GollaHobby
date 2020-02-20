@@ -1,6 +1,9 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentPagerAdapter;
@@ -12,6 +15,7 @@ public class HobbyActivity extends AppCompatActivity {
 
     private FragmentPagerAdapter fragmentPagerAdapter;
     TabLayout.Tab tab;
+    ImageButton btnLogo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +48,15 @@ public class HobbyActivity extends AppCompatActivity {
             tab = tabLayout.getTabAt(4);
             tab.select();
         }
+
+        btnLogo = findViewById(R.id.btnLogo);
+        btnLogo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(getApplicationContext(), SelectActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }

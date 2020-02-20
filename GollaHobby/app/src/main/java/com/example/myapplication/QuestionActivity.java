@@ -8,6 +8,7 @@ import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -25,6 +26,8 @@ public class QuestionActivity<context> extends AppCompatActivity {
     TextView tv0; //seekbar값 0표시
     TextView tv100; //seekbar값 100표시
     Button btnNext; //Next버튼
+
+    ImageButton btnLogo;
 
     int productiontype=0; //제작형
     int creationtype=0; //창작형
@@ -50,6 +53,8 @@ public class QuestionActivity<context> extends AppCompatActivity {
         tv100=findViewById(R.id.tv100);
         btnNext=findViewById(R.id.btnStart);
 
+        btnLogo = findViewById(R.id.btnLogo);
+
         count=1;
         tvQNum.setText("Q"+String.valueOf(count));
 
@@ -74,6 +79,14 @@ public class QuestionActivity<context> extends AppCompatActivity {
                 return true;
             }
         }); //상단 seekbar 고정
+
+        btnLogo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(getApplicationContext(), SelectActivity.class);
+                startActivity(intent);
+            }
+        });
 
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
