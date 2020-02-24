@@ -35,7 +35,7 @@
         android:layout_marginTop="15dp"
         android:fontFamily="serif"
         android:gravity="center"
-        android:text="슬라이드를 이용하여\n 해당 설문에 대한 본인의 점수를 입력해주세요"
+        android:text="슬라이드를 이용하여\n 해당 설문에 대한 본인의 점수를 입력해주세요."
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textStyle="bold" />
 
