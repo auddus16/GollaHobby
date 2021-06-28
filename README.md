@@ -1,9 +1,11 @@
 # GollaHobby
 
-## 이니로 동계 안드로이드 멘토링 팀 프로젝트
+![contributors](https://img.shields.io/github/contributors/201411108/GollaHobby)
 
-- 기간 : 2020.01.27 ~ 2020.02.27
+2020.01.27 ~ 2020.02.27, 이니로 동계 안드로이드 멘토링 팀 프로젝트
 
-![GollaHobby](./golla.gif)
+<p align='center'>
+  <img src='golla.gif'/>
+</p>
 
-- 안드로이드 스튜디오, 자바
+* Android Studio, Java, Github
