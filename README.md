@@ -14,6 +14,7 @@
     - [2. ViewPager](#2-viewpager)
     - [3. SeekBar](#3-seekbar)
     - [4. RadarChart](#4-radarchart)
+  - [Authors](#authors)
 
 <h3 align='center'>Preview</h3>
 <p align='center'>
@@ -43,3 +44,13 @@
 
 ### 4. RadarChart
   * `RadarChart`를 이용하여 수행 결과를 그래프 형태로 표시
+
+## Authors
+
+* [auddus16](https://github.com/auddus16)
+* [sally5131](https://github.com/sally5131)
+* [yunjin99](https://github.com/yunjin99)
+* [Byun-Sung-Ho](https://github.com/Byun-Sung-Ho)
+* [201411108](https://github.com/201411108)
+
+See also the list of [contributors](https://github.com/sally5131/GollaHobby/graphs/contributors) who participated in this project.
